@@ -1,0 +1,16 @@
+jobs:
+  build:
+    uses: WordPress/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@v3
+    with:
+      artifacts: |
+        site-toolkit=build/site-toolkit.zip
+        site-analytics=build/site-analytics.zip
+      build-command: |
+        set -euo pipefail
+        mkdir -p build stage
+        for slug in site-toolkit site-analytics; do
+          rm -rf "stage/$slug"
+          mkdir -p "stage/$slug"
+          rsync -a "plugins/$slug/" "stage/$slug/"
+          ( cd stage && zip -rq "../build/$slug.zip" "$slug" )
+        done

@@ -1,0 +1,28 @@
+fetch-depth: 0          # so `git diff` against base ref works
+artifacts: |
+  alpha=build/alpha.zip
+  beta=build/beta.zip
+blueprint-from-build: blueprint.json
+build-command: |
+  set -euo pipefail
+  mkdir -p build stage
+  for slug in alpha beta; do
+    rm -rf "stage/$slug"
+    mkdir -p "stage/$slug"
+    rsync -a "plugins/$slug/" "stage/$slug/"
+    ( cd stage && zip -rq "../build/$slug.zip" "$slug" )
+  done
+  git fetch --no-tags --depth=50 origin "$GITHUB_BASE_REF"
+  changed=$(git diff --name-only "origin/$GITHUB_BASE_REF...HEAD" \
+    | awk -F/ '/^plugins\// {print $2}' | sort -u)
+  node - "$changed" <<'NODE' > blueprint.json
+  const slugs = (process.argv[2] || '').split(/\s+/).filter(Boolean);
+  process.stdout.write(JSON.stringify({
+    $schema: 'https://playground.wordpress.net/blueprint-schema.json',
+    steps: (slugs.length ? slugs : ['alpha', 'beta']).map(s => ({
+      step: 'installPlugin',
+      pluginZipFile: { resource: 'url', url: '{{ARTIFACT_URL:' + s + '}}' },
+      options: { activate: true },
+    })),
+  }));
+  NODE

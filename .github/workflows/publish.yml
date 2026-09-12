@@ -1,0 +1,139 @@
+name: PR Preview - Publish
+'on':
+  workflow_run:
+    workflows:
+    - PR Preview - Build
+    types:
+    - completed
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  baseline-build-plugin:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-plugin' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: plugin
+  baseline-build-theme:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-theme' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: theme
+  baseline-build-monorepo:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-monorepo' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"steps\": [\n    { \"\
+        step\": \"installPlugin\",\n      \"pluginZipFile\": { \"resource\": \"url\", \"url\": \"{{ARTIFACT_URL:site-toolkit}}\"\
+        \ },\n      \"options\": { \"activate\": true } },\n    { \"step\": \"installPlugin\",\n      \"pluginZipFile\": {\
+        \ \"resource\": \"url\", \"url\": \"{{ARTIFACT_URL:site-analytics}}\" },\n      \"options\": { \"activate\": true\
+        \ } }\n  ]\n}\n"
+  baseline-build-selective:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-selective' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      blueprint-from-artifact: true
+  baseline-build-composer:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-composer' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: plugin
+  baseline-build-custom:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-custom' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"landingPage\": \"/wp-admin/admin.php?page=my-plugin\"\
+        ,\n  \"phpExtensionBundles\": [\"kitchen-sink\"],\n  \"steps\": [\n    { \"step\": \"login\", \"username\": \"admin\"\
+        , \"password\": \"password\" },\n    { \"step\": \"installPlugin\",\n      \"pluginZipFile\": { \"resource\": \"url\"\
+        , \"url\": \"{{ARTIFACT_URL:my-plugin}}\" },\n      \"options\": { \"activate\": true } }\n  ]\n}\n"
+  baseline-build-comment:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/build-comment' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: plugin
+      mode: comment
+  current-build-plugin:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-plugin' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: plugin
+  current-build-theme:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-theme' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: theme
+  current-build-monorepo:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-monorepo' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"steps\": [\n    { \"\
+        step\": \"installPlugin\",\n      \"pluginZipFile\": { \"resource\": \"url\", \"url\": \"{{ARTIFACT_URL:site-toolkit}}\"\
+        \ },\n      \"options\": { \"activate\": true } },\n    { \"step\": \"installPlugin\",\n      \"pluginZipFile\": {\
+        \ \"resource\": \"url\", \"url\": \"{{ARTIFACT_URL:site-analytics}}\" },\n      \"options\": { \"activate\": true\
+        \ } }\n  ]\n}\n"
+  current-build-selective:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-selective' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      blueprint-from-artifact: true
+  current-build-composer:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-composer' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: plugin
+  current-build-custom:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-custom' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"landingPage\": \"/wp-admin/admin.php?page=my-plugin\"\
+        ,\n  \"phpExtensionBundles\": [\"kitchen-sink\"],\n  \"steps\": [\n    { \"step\": \"login\", \"username\": \"admin\"\
+        , \"password\": \"password\" },\n    { \"step\": \"installPlugin\",\n      \"pluginZipFile\": { \"resource\": \"url\"\
+        , \"url\": \"{{ARTIFACT_URL:my-plugin}}\" },\n      \"options\": { \"activate\": true } }\n  ]\n}\n"
+  current-build-comment:
+    if: ${{ github.event.workflow_run.head_branch == 'current/build-comment' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      kind: plugin
+      mode: comment

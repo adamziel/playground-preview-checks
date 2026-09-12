@@ -1,0 +1,21 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "login": true,
+  "siteOptions": {
+    "blogname": "Hosted preview recipe"
+  },
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "git:directory",
+        "url": "https://github.com/adamziel/playground-preview-checks",
+        "ref": "main",
+        "path": "plugins/my-plugin"
+      },
+      "options": {
+        "activate": true
+      }
+    }
+  ]
+}

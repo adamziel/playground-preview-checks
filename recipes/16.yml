@@ -1,0 +1,10 @@
+- uses: WordPress/action-wp-playground-pr-preview@v3
+  with:
+    plugin-path: .
+    description-template: |
+      ### Test this PR in WordPress Playground
+
+      {{PLAYGROUND_BUTTON}}
+
+      **Branch:** {{PR_HEAD_REF}}  ·  **Plugin:** `{{PLUGIN_SLUG}}`
+    github-token: ${{ secrets.GITHUB_TOKEN }}

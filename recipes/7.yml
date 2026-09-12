@@ -1,0 +1,4 @@
+- uses: WordPress/action-wp-playground-pr-preview@v3
+  with:
+    blueprint-url: https://example.com/path/to/blueprint.json
+    github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,40 @@
+name: Legacy preview build
+'on':
+  pull_request:
+    types:
+    - opened
+    - synchronize
+    - reopened
+    - edited
+permissions:
+  contents: read
+jobs:
+  baseline:
+    if: ${{ github.head_ref == 'baseline/legacy-workflow' }}
+    runs-on: ubuntu-latest
+    steps:
+    - &id001
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      with:
+        persist-credentials: false
+    - &id002
+      name: Package fixture
+      shell: bash
+      run: 'bash scripts/package-plugin.sh
+
+        cp build/my-plugin.zip plugin.zip
+
+        '
+    - &id003
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      with:
+        name: legacy-plugin
+        path: plugin.zip
+        if-no-files-found: error
+  current:
+    if: ${{ github.head_ref == 'current/legacy-workflow' }}
+    runs-on: ubuntu-latest
+    steps:
+    - *id001
+    - *id002
+    - *id003

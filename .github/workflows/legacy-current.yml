@@ -1,0 +1,70 @@
+name: Legacy current run
+'on':
+  pull_request:
+    types:
+    - opened
+    - synchronize
+    - reopened
+    - edited
+jobs:
+  baseline:
+    if: ${{ github.head_ref == 'baseline/legacy-current' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+    - &id001
+      uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      with:
+        persist-credentials: false
+    - &id002
+      name: Package fixture
+      shell: bash
+      run: 'bash scripts/package-plugin.sh
+
+        cp build/my-plugin.zip plugin.zip
+
+        '
+    - &id003
+      uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      with:
+        name: legacy-plugin
+        path: plugin.zip
+        if-no-files-found: error
+    - id: expose
+      uses: adamziel/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        artifact-name: legacy-plugin
+        artifact-filename: plugin.zip
+        release-tag: legacy-artifacts
+        pr-number: ${{ github.event.pull_request.number }}
+        commit-sha: ${{ github.event.pull_request.head.sha }}
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        blueprint: '{"steps": [{"step": "installPlugin", "pluginData": {"resource": "url", "url": "${{ steps.expose.outputs.artifact-url
+          }}"}, "options": {"activate": true}}]}'
+  current:
+    if: ${{ github.head_ref == 'current/legacy-current' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+    - *id001
+    - *id002
+    - *id003
+    - id: expose
+      uses: adamziel/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        artifact-name: legacy-plugin
+        artifact-filename: plugin.zip
+        release-tag: legacy-artifacts
+        pr-number: ${{ github.event.pull_request.number }}
+        commit-sha: ${{ github.event.pull_request.head.sha }}
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        blueprint: '{"steps": [{"step": "installPlugin", "pluginData": {"resource": "url", "url": "${{ steps.expose.outputs.artifact-url
+          }}"}, "options": {"activate": true}}]}'

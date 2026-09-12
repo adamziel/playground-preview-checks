@@ -1,0 +1,4 @@
+- uses: WordPress/action-wp-playground-pr-preview@v3
+  with:
+    plugin-path: plugins/my-awesome-plugin
+    github-token: ${{ secrets.GITHUB_TOKEN }}

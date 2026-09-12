@@ -1,0 +1,23 @@
+# .github/workflows/pr-playground-preview-build.yml
+name: PR Playground Preview Build
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  build:
+    uses: WordPress/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@v3
+    with:
+      php-version: '8.1'
+      artifacts: my-plugin=build/my-plugin.zip
+      build-command: |
+        set -euo pipefail
+        composer install --no-dev --optimize-autoloader --no-interaction --no-progress
+        mkdir -p build/my-plugin
+        rsync -a --delete \
+          --exclude-from='.distignore' \
+          --exclude='.git' \
+          --exclude='.github' \
+          --exclude='build' \
+          ./ build/my-plugin/
+        ( cd build && zip -qr my-plugin.zip my-plugin )

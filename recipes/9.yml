@@ -1,0 +1,19 @@
+jobs:
+  publish:
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: WordPress/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@v3
+    with:
+      blueprint: |
+        {
+          "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+          "steps": [
+            { "step": "installPlugin",
+              "pluginZipFile": { "resource": "url", "url": "{{ARTIFACT_URL:site-toolkit}}" },
+              "options": { "activate": true } },
+            { "step": "installPlugin",
+              "pluginZipFile": { "resource": "url", "url": "{{ARTIFACT_URL:site-analytics}}" },
+              "options": { "activate": true } }
+          ]
+        }

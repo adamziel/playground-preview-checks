@@ -1,0 +1,4 @@
+- uses: WordPress/action-wp-playground-pr-preview@v3
+  with:
+    theme-path: .             # or themes/my-theme
+    github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,12 @@
+{
+  "name": "playground-preview-checks",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "build:plugin-zip": "bash scripts/package-plugin.sh"
+  },
+  "devDependencies": {
+    "vite": "5.4.21"
+  }
+}

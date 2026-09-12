@@ -1,0 +1,233 @@
+name: Recipe previews
+'on':
+  pull_request:
+    types:
+    - opened
+    - synchronize
+    - reopened
+    - edited
+jobs:
+  baseline-direct-root:
+    if: ${{ github.head_ref == 'baseline/direct-root' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        plugin-path: .
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-subdir:
+    if: ${{ github.head_ref == 'baseline/direct-subdir' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        plugin-path: plugins/my-awesome-plugin
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-theme:
+    if: ${{ github.head_ref == 'baseline/direct-theme' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        theme-path: .
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-both:
+    if: ${{ github.head_ref == 'baseline/direct-both' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        plugin-path: plugins/my-plugin
+        theme-path: themes/my-theme
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-blueprint:
+    if: ${{ github.head_ref == 'baseline/direct-blueprint' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"preferredVersions\"\
+          : { \"php\": \"8.3\", \"wp\": \"6.6\" },\n  \"steps\": [\n    { \"step\": \"installPlugin\",\n      \"pluginData\"\
+          : {\n        \"resource\": \"git:directory\",\n        \"url\": \"https://github.com/${{ github.repository }}.git\"\
+          ,\n        \"ref\": \"${{ github.event.pull_request.head.ref }}\",\n        \"path\": \"/\"\n      },\n      \"\
+          options\": { \"activate\": true } },\n    { \"step\": \"installPlugin\",\n      \"pluginData\": { \"resource\":\
+          \ \"wordpress.org/plugins\", \"slug\": \"woocommerce\" },\n      \"options\": { \"activate\": true } },\n    { \"\
+          step\": \"login\", \"username\": \"admin\" }\n  ]\n}\n"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-hosted:
+    if: ${{ github.head_ref == 'baseline/direct-hosted' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        blueprint-url: https://raw.githubusercontent.com/adamziel/playground-preview-checks/main/blueprint.json
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-comment:
+    if: ${{ github.head_ref == 'baseline/direct-comment' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        plugin-path: .
+        mode: comment
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-description-template:
+    if: ${{ github.head_ref == 'baseline/direct-description-template' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        plugin-path: .
+        description-template: "### Test this PR in WordPress Playground\n\n{{PLAYGROUND_BUTTON}}\n\n**Branch:** {{PR_HEAD_REF}}\
+          \  \xB7  **Plugin:** `{{PLUGIN_SLUG}}`\n"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  baseline-direct-comment-template:
+    if: ${{ github.head_ref == 'baseline/direct-comment-template' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        plugin-path: .
+        mode: comment
+        comment-template: "## Preview Changes in WordPress Playground\n\n{{PLAYGROUND_BUTTON}}\n\n### Testing checklist\n\
+          1. Click the button.\n2. Go to Plugins \u2192 Installed Plugins.\n3. Verify `{{PLUGIN_SLUG}}` is active.\n\n**PR:**\
+          \ #{{PR_NUMBER}} \u2014 {{PR_TITLE}}\n"
+  current-direct-root:
+    if: ${{ github.head_ref == 'current/direct-root' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        plugin-path: .
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-subdir:
+    if: ${{ github.head_ref == 'current/direct-subdir' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        plugin-path: plugins/my-awesome-plugin
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-theme:
+    if: ${{ github.head_ref == 'current/direct-theme' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        theme-path: .
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-both:
+    if: ${{ github.head_ref == 'current/direct-both' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        plugin-path: plugins/my-plugin
+        theme-path: themes/my-theme
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-blueprint:
+    if: ${{ github.head_ref == 'current/direct-blueprint' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"preferredVersions\"\
+          : { \"php\": \"8.3\", \"wp\": \"6.6\" },\n  \"steps\": [\n    { \"step\": \"installPlugin\",\n      \"pluginData\"\
+          : {\n        \"resource\": \"git:directory\",\n        \"url\": \"https://github.com/${{ github.repository }}.git\"\
+          ,\n        \"ref\": \"${{ github.event.pull_request.head.ref }}\",\n        \"path\": \"/\"\n      },\n      \"\
+          options\": { \"activate\": true } },\n    { \"step\": \"installPlugin\",\n      \"pluginData\": { \"resource\":\
+          \ \"wordpress.org/plugins\", \"slug\": \"woocommerce\" },\n      \"options\": { \"activate\": true } },\n    { \"\
+          step\": \"login\", \"username\": \"admin\" }\n  ]\n}\n"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-hosted:
+    if: ${{ github.head_ref == 'current/direct-hosted' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        blueprint-url: https://raw.githubusercontent.com/adamziel/playground-preview-checks/main/blueprint.json
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-comment:
+    if: ${{ github.head_ref == 'current/direct-comment' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        plugin-path: .
+        mode: comment
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-description-template:
+    if: ${{ github.head_ref == 'current/direct-description-template' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        plugin-path: .
+        description-template: "### Test this PR in WordPress Playground\n\n{{PLAYGROUND_BUTTON}}\n\n**Branch:** {{PR_HEAD_REF}}\
+          \  \xB7  **Plugin:** `{{PLUGIN_SLUG}}`\n"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+  current-direct-comment-template:
+    if: ${{ github.head_ref == 'current/direct-comment-template' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        plugin-path: .
+        mode: comment
+        comment-template: "## Preview Changes in WordPress Playground\n\n{{PLAYGROUND_BUTTON}}\n\n### Testing checklist\n\
+          1. Click the button.\n2. Go to Plugins \u2192 Installed Plugins.\n3. Verify `{{PLUGIN_SLUG}}` is active.\n\n**PR:**\
+          \ #{{PR_NUMBER}} \u2014 {{PR_TITLE}}\n"

@@ -1,0 +1,181 @@
+name: PR Preview - Build
+'on':
+  pull_request:
+    types:
+    - opened
+    - synchronize
+    - reopened
+    - edited
+permissions:
+  contents: read
+jobs:
+  baseline-build-plugin:
+    if: ${{ github.head_ref == 'baseline/build-plugin' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      build-command: 'npm ci
+
+        npm run build:plugin-zip
+
+        '
+  baseline-build-theme:
+    if: ${{ github.head_ref == 'baseline/build-theme' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      artifacts: my-theme=build/my-theme.zip
+      build-command: 'mkdir -p build
+
+        (cd themes && zip -rq ../build/my-theme.zip my-theme)
+
+        '
+  baseline-build-monorepo:
+    if: ${{ github.head_ref == 'baseline/build-monorepo' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      artifacts: 'site-toolkit=build/site-toolkit.zip
+
+        site-analytics=build/site-analytics.zip
+
+        '
+      build-command: "set -euo pipefail\nmkdir -p build stage\nfor slug in site-toolkit site-analytics; do\n  rm -rf \"stage/$slug\"\
+        \n  mkdir -p \"stage/$slug\"\n  rsync -a \"plugins/$slug/\" \"stage/$slug/\"\n  ( cd stage && zip -rq \"../build/$slug.zip\"\
+        \ \"$slug\" )\ndone\n"
+  baseline-build-selective:
+    if: ${{ github.head_ref == 'baseline/build-selective' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      fetch-depth: 0
+      artifacts: 'alpha=build/alpha.zip
+
+        beta=build/beta.zip
+
+        '
+      blueprint-from-build: blueprint.json
+      build-command: "set -euo pipefail\nmkdir -p build stage\nfor slug in alpha beta; do\n  rm -rf \"stage/$slug\"\n  mkdir\
+        \ -p \"stage/$slug\"\n  rsync -a \"plugins/$slug/\" \"stage/$slug/\"\n  ( cd stage && zip -rq \"../build/$slug.zip\"\
+        \ \"$slug\" )\ndone\ngit fetch --no-tags --depth=50 origin \"$GITHUB_BASE_REF\"\nchanged=$(git diff --name-only \"\
+        origin/$GITHUB_BASE_REF...HEAD\" \\\n  | awk -F/ '/^plugins\\// {print $2}' | sort -u)\nnode - \"$changed\" <<'NODE'\
+        \ > blueprint.json\nconst slugs = (process.argv[2] || '').split(/\\s+/).filter(Boolean);\nprocess.stdout.write(JSON.stringify({\n\
+        \  $schema: 'https://playground.wordpress.net/blueprint-schema.json',\n  steps: (slugs.length ? slugs : ['alpha',\
+        \ 'beta']).map(s => ({\n    step: 'installPlugin',\n    pluginZipFile: { resource: 'url', url: '{{ARTIFACT_URL:' +\
+        \ s + '}}' },\n    options: { activate: true },\n  })),\n}));\nNODE\n"
+  baseline-build-composer:
+    if: ${{ github.head_ref == 'baseline/build-composer' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      php-version: '8.2'
+      build-command: "set -euo pipefail\n\n# 1. PHP runtime deps only.\ncomposer install --no-dev --prefer-dist --no-interaction\
+        \ --optimize-autoloader\n\n# 2. Vite bundle.\nnpm ci\nnpm run build\n\n# 3. Stage a slug-named directory so the zip\
+        \ extracts to\n#    wp-content/plugins/my-plugin/.\nmkdir -p stage/my-plugin build\nrsync -a \\\n  --exclude '.git'\
+        \ --exclude '.github' \\\n  --exclude 'node_modules' --exclude 'src-js' \\\n  --exclude 'vite.config.js' --exclude\
+        \ 'package*.json' \\\n  --exclude 'composer*.json' --exclude '.gitignore' \\\n  --exclude 'stage' --exclude 'build'\
+        \ \\\n  ./ stage/my-plugin/\n( cd stage && zip -rq ../build/my-plugin.zip my-plugin )\n"
+  baseline-build-custom:
+    if: ${{ github.head_ref == 'baseline/build-custom' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      php-version: '8.1'
+      artifacts: my-plugin=build/my-plugin.zip
+      build-command: "set -euo pipefail\ncomposer install --no-dev --optimize-autoloader --no-interaction --no-progress\n\
+        mkdir -p build/my-plugin\nrsync -a --delete \\\n  --exclude-from='.distignore' \\\n  --exclude='.git' \\\n  --exclude='.github'\
+        \ \\\n  --exclude='build' \\\n  ./ build/my-plugin/\n( cd build && zip -qr my-plugin.zip my-plugin )\n"
+  baseline-build-comment:
+    if: ${{ github.head_ref == 'baseline/build-comment' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      build-command: 'npm ci
+
+        npm run build:plugin-zip
+
+        '
+  current-build-plugin:
+    if: ${{ github.head_ref == 'current/build-plugin' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      build-command: 'npm ci
+
+        npm run build:plugin-zip
+
+        '
+  current-build-theme:
+    if: ${{ github.head_ref == 'current/build-theme' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      artifacts: my-theme=build/my-theme.zip
+      build-command: 'mkdir -p build
+
+        (cd themes && zip -rq ../build/my-theme.zip my-theme)
+
+        '
+  current-build-monorepo:
+    if: ${{ github.head_ref == 'current/build-monorepo' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      artifacts: 'site-toolkit=build/site-toolkit.zip
+
+        site-analytics=build/site-analytics.zip
+
+        '
+      build-command: "set -euo pipefail\nmkdir -p build stage\nfor slug in site-toolkit site-analytics; do\n  rm -rf \"stage/$slug\"\
+        \n  mkdir -p \"stage/$slug\"\n  rsync -a \"plugins/$slug/\" \"stage/$slug/\"\n  ( cd stage && zip -rq \"../build/$slug.zip\"\
+        \ \"$slug\" )\ndone\n"
+  current-build-selective:
+    if: ${{ github.head_ref == 'current/build-selective' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      fetch-depth: 0
+      artifacts: 'alpha=build/alpha.zip
+
+        beta=build/beta.zip
+
+        '
+      blueprint-from-build: blueprint.json
+      build-command: "set -euo pipefail\nmkdir -p build stage\nfor slug in alpha beta; do\n  rm -rf \"stage/$slug\"\n  mkdir\
+        \ -p \"stage/$slug\"\n  rsync -a \"plugins/$slug/\" \"stage/$slug/\"\n  ( cd stage && zip -rq \"../build/$slug.zip\"\
+        \ \"$slug\" )\ndone\ngit fetch --no-tags --depth=50 origin \"$GITHUB_BASE_REF\"\nchanged=$(git diff --name-only \"\
+        origin/$GITHUB_BASE_REF...HEAD\" \\\n  | awk -F/ '/^plugins\\// {print $2}' | sort -u)\nnode - \"$changed\" <<'NODE'\
+        \ > blueprint.json\nconst slugs = (process.argv[2] || '').split(/\\s+/).filter(Boolean);\nprocess.stdout.write(JSON.stringify({\n\
+        \  $schema: 'https://playground.wordpress.net/blueprint-schema.json',\n  steps: (slugs.length ? slugs : ['alpha',\
+        \ 'beta']).map(s => ({\n    step: 'installPlugin',\n    pluginZipFile: { resource: 'url', url: '{{ARTIFACT_URL:' +\
+        \ s + '}}' },\n    options: { activate: true },\n  })),\n}));\nNODE\n"
+  current-build-composer:
+    if: ${{ github.head_ref == 'current/build-composer' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      php-version: '8.2'
+      build-command: "set -euo pipefail\n\n# 1. PHP runtime deps only.\ncomposer install --no-dev --prefer-dist --no-interaction\
+        \ --optimize-autoloader\n\n# 2. Vite bundle.\nnpm ci\nnpm run build\n\n# 3. Stage a slug-named directory so the zip\
+        \ extracts to\n#    wp-content/plugins/my-plugin/.\nmkdir -p stage/my-plugin build\nrsync -a \\\n  --exclude '.git'\
+        \ --exclude '.github' \\\n  --exclude 'node_modules' --exclude 'src-js' \\\n  --exclude 'vite.config.js' --exclude\
+        \ 'package*.json' \\\n  --exclude 'composer*.json' --exclude '.gitignore' \\\n  --exclude 'stage' --exclude 'build'\
+        \ \\\n  ./ stage/my-plugin/\n( cd stage && zip -rq ../build/my-plugin.zip my-plugin )\n"
+  current-build-custom:
+    if: ${{ github.head_ref == 'current/build-custom' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      php-version: '8.1'
+      artifacts: my-plugin=build/my-plugin.zip
+      build-command: "set -euo pipefail\ncomposer install --no-dev --optimize-autoloader --no-interaction --no-progress\n\
+        mkdir -p build/my-plugin\nrsync -a --delete \\\n  --exclude-from='.distignore' \\\n  --exclude='.git' \\\n  --exclude='.github'\
+        \ \\\n  --exclude='build' \\\n  ./ build/my-plugin/\n( cd build && zip -qr my-plugin.zip my-plugin )\n"
+  current-build-comment:
+    if: ${{ github.head_ref == 'current/build-comment' }}
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      build-command: 'npm ci
+
+        npm run build:plugin-zip
+
+        '

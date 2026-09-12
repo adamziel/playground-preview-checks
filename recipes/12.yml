@@ -1,0 +1,24 @@
+artifacts: my-plugin=build/my-plugin.zip
+node-version: '20'
+php-version: '8.2'
+build-command: |
+  set -euo pipefail
+
+  # 1. PHP runtime deps only.
+  composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader
+
+  # 2. Vite bundle.
+  npm ci
+  npm run build
+
+  # 3. Stage a slug-named directory so the zip extracts to
+  #    wp-content/plugins/my-plugin/.
+  mkdir -p stage/my-plugin build
+  rsync -a \
+    --exclude '.git' --exclude '.github' \
+    --exclude 'node_modules' --exclude 'src-js' \
+    --exclude 'vite.config.js' --exclude 'package*.json' \
+    --exclude 'composer*.json' --exclude '.gitignore' \
+    --exclude 'stage' --exclude 'build' \
+    ./ stage/my-plugin/
+  ( cd stage && zip -rq ../build/my-plugin.zip my-plugin )

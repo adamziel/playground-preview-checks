@@ -1,0 +1,15 @@
+# .github/workflows/pr-preview-build.yml
+name: PR Preview - Build
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  build:
+    uses: WordPress/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@v3
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      node-version: '20'
+      build-command: |
+        npm ci
+        npm run build:plugin-zip

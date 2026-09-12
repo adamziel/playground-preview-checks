@@ -1,0 +1,225 @@
+{
+  "repository": "adamziel/playground-preview-checks",
+  "refs": {
+    "baseline": "5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f",
+    "current": "4ae782ed46e391ac203fdbbf6959fd7d0b55f40e"
+  },
+  "cases": [
+    {
+      "branch": "baseline/direct-root",
+      "case": "direct-root",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-subdir",
+      "case": "direct-subdir",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-theme",
+      "case": "direct-theme",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-both",
+      "case": "direct-both",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-blueprint",
+      "case": "direct-blueprint",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-hosted",
+      "case": "direct-hosted",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-comment",
+      "case": "direct-comment",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-description-template",
+      "case": "direct-description-template",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/direct-comment-template",
+      "case": "direct-comment-template",
+      "version": "baseline",
+      "type": "direct"
+    },
+    {
+      "branch": "baseline/build-plugin",
+      "case": "build-plugin",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/build-theme",
+      "case": "build-theme",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/build-monorepo",
+      "case": "build-monorepo",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/build-selective",
+      "case": "build-selective",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/build-composer",
+      "case": "build-composer",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/build-custom",
+      "case": "build-custom",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/build-comment",
+      "case": "build-comment",
+      "version": "baseline",
+      "type": "build"
+    },
+    {
+      "branch": "current/direct-root",
+      "case": "direct-root",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-subdir",
+      "case": "direct-subdir",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-theme",
+      "case": "direct-theme",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-both",
+      "case": "direct-both",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-blueprint",
+      "case": "direct-blueprint",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-hosted",
+      "case": "direct-hosted",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-comment",
+      "case": "direct-comment",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-description-template",
+      "case": "direct-description-template",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/direct-comment-template",
+      "case": "direct-comment-template",
+      "version": "current",
+      "type": "direct"
+    },
+    {
+      "branch": "current/build-plugin",
+      "case": "build-plugin",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "current/build-theme",
+      "case": "build-theme",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "current/build-monorepo",
+      "case": "build-monorepo",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "current/build-selective",
+      "case": "build-selective",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "current/build-composer",
+      "case": "build-composer",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "current/build-custom",
+      "case": "build-custom",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "current/build-comment",
+      "case": "build-comment",
+      "version": "current",
+      "type": "build"
+    },
+    {
+      "branch": "baseline/legacy-current",
+      "case": "legacy-current",
+      "version": "baseline",
+      "type": "legacy"
+    },
+    {
+      "branch": "baseline/legacy-workflow",
+      "case": "legacy-workflow",
+      "version": "baseline",
+      "type": "legacy"
+    },
+    {
+      "branch": "current/legacy-current",
+      "case": "legacy-current",
+      "version": "current",
+      "type": "legacy"
+    },
+    {
+      "branch": "current/legacy-workflow",
+      "case": "legacy-workflow",
+      "version": "current",
+      "type": "legacy"
+    }
+  ]
+}

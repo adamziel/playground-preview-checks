@@ -1,0 +1,78 @@
+name: Legacy preview publish
+'on':
+  workflow_run:
+    workflows:
+    - Legacy preview build
+    types:
+    - completed
+permissions:
+  contents: write
+  actions: read
+  pull-requests: write
+jobs:
+  baseline:
+    if: ${{ github.event.workflow_run.head_branch == 'baseline/legacy-workflow' && github.event.workflow_run.conclusion ==
+      'success' }}
+    runs-on: ubuntu-latest
+    steps:
+    - id: meta
+      uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
+      with:
+        script: 'const run = context.payload.workflow_run;
+
+          const pulls = await github.rest.pulls.list({...context.repo, head: context.repo.owner + '':'' + run.head_branch,
+          state: ''open''});
+
+          if (pulls.data.length !== 1) throw new Error(''Expected one fixture PR'');
+
+          core.setOutput(''pr'', String(pulls.data[0].number));
+
+          '
+    - id: expose
+      uses: adamziel/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        artifact-name: legacy-plugin
+        artifact-filename: plugin.zip
+        release-tag: legacy-artifacts
+        pr-number: ${{ steps.meta.outputs.pr }}
+        commit-sha: ${{ github.event.workflow_run.head_sha }}
+        artifact-source-run-id: ${{ github.event.workflow_run.id }}
+    - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        blueprint: '{"steps": [{"step": "installPlugin", "pluginData": {"resource": "url", "url": "${{ steps.expose.outputs.artifact-url
+          }}"}, "options": {"activate": true}}]}'
+        pr-number: ${{ steps.meta.outputs.pr }}
+  current:
+    if: ${{ github.event.workflow_run.head_branch == 'current/legacy-workflow' && github.event.workflow_run.conclusion ==
+      'success' }}
+    runs-on: ubuntu-latest
+    steps:
+    - id: meta
+      uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b
+      with:
+        script: 'const run = context.payload.workflow_run;
+
+          const pulls = await github.rest.pulls.list({...context.repo, head: context.repo.owner + '':'' + run.head_branch,
+          state: ''open''});
+
+          if (pulls.data.length !== 1) throw new Error(''Expected one fixture PR'');
+
+          core.setOutput(''pr'', String(pulls.data[0].number));
+
+          '
+    - id: expose
+      uses: adamziel/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        artifact-name: legacy-plugin
+        artifact-filename: plugin.zip
+        release-tag: legacy-artifacts
+        pr-number: ${{ steps.meta.outputs.pr }}
+        commit-sha: ${{ github.event.workflow_run.head_sha }}
+        artifact-source-run-id: ${{ github.event.workflow_run.id }}
+    - uses: adamziel/action-wp-playground-pr-preview@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        blueprint: '{"steps": [{"step": "installPlugin", "pluginData": {"resource": "url", "url": "${{ steps.expose.outputs.artifact-url
+          }}"}, "options": {"activate": true}}]}'
+        pr-number: ${{ steps.meta.outputs.pr }}

@@ -1,0 +1,15 @@
+- uses: WordPress/action-wp-playground-pr-preview@v3
+  with:
+    plugin-path: .
+    mode: comment
+    comment-template: |
+      ## Preview Changes in WordPress Playground
+
+      {{PLAYGROUND_BUTTON}}
+
+      ### Testing checklist
+      1. Click the button.
+      2. Go to Plugins → Installed Plugins.
+      3. Verify `{{PLUGIN_SLUG}}` is active.
+
+      **PR:** #{{PR_NUMBER}} — {{PR_TITLE}}
