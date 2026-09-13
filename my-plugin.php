@@ -10,3 +10,5 @@ add_action('admin_menu', function () {
         echo '<p>Vite: ' . (file_exists(__DIR__ . '/dist/preview.js') ? 'built' : 'not built') . '</p>';
     });
 });
+
+// Recipe check: baseline/build-custom
