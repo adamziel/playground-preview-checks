@@ -119,6 +119,7 @@ jobs:
         comment-template: "## Preview Changes in WordPress Playground\n\n{{PLAYGROUND_BUTTON}}\n\n### Testing checklist\n\
           1. Click the button.\n2. Go to Plugins \u2192 Installed Plugins.\n3. Verify `{{PLUGIN_SLUG}}` is active.\n\n**PR:**\
           \ #{{PR_NUMBER}} \u2014 {{PR_TITLE}}\n"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
   current-direct-root:
     if: ${{ github.head_ref == 'current/direct-root' }}
     runs-on: ubuntu-latest
