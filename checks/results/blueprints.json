@@ -1,0 +1,800 @@
+[
+  {
+    "branch": "current/build-plugin",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-1-dee2bca61eb3d8240c125b928de0380a4709490e-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/legacy-workflow",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22steps%22%3A%20%5B%7B%22step%22%3A%20%22installPlugin%22%2C%20%22pluginData%22%3A%20%7B%22resource%22%3A%20%22url%22%2C%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Flegacy-artifacts%2Fpr-2-55f86c878a82567a8f07441772eab5a00daea212.zip%22%7D%2C%20%22options%22%3A%20%7B%22activate%22%3A%20true%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-root",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-root%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-root/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-root/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-subdir",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-subdir%22%2C%22path%22%3A%22plugins%2Fmy-awesome-plugin%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-subdir-at-plugins-my-awesome-plugin/my-awesome-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-subdir-at-plugins-my-awesome-plugin/my-awesome-plugin.php": "Preview my-awesome-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-theme",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installTheme%22%2C%22themeData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-theme%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [],
+      "theme": "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-theme",
+      "themeName": "Preview Theme",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-both",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-both%22%2C%22path%22%3A%22plugins%2Fmy-plugin%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installTheme%22%2C%22themeData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-both%22%2C%22path%22%3A%22themes%2Fmy-theme%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-both-at-plugins-my-plugin/my-plugin.php"
+      ],
+      "theme": "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-both-at-themes-my-theme",
+      "themeName": "Preview Theme",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-both-at-plugins-my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-blueprint",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%0A%20%20%22%24schema%22%3A%20%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%0A%20%20%22preferredVersions%22%3A%20%7B%20%22php%22%3A%20%228.3%22%2C%20%22wp%22%3A%20%22latest%22%20%7D%2C%0A%20%20%22steps%22%3A%20%5B%0A%20%20%20%20%7B%20%22step%22%3A%20%22installPlugin%22%2C%0A%20%20%20%20%20%20%22pluginData%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22resource%22%3A%20%22git%3Adirectory%22%2C%0A%20%20%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%0A%20%20%20%20%20%20%20%20%22ref%22%3A%20%22baseline%2Fdirect-blueprint%22%2C%0A%20%20%20%20%20%20%20%20%22path%22%3A%20%22%2F%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22options%22%3A%20%7B%20%22activate%22%3A%20true%20%7D%20%7D%2C%0A%20%20%20%20%7B%20%22step%22%3A%20%22installPlugin%22%2C%0A%20%20%20%20%20%20%22pluginData%22%3A%20%7B%20%22resource%22%3A%20%22wordpress.org%2Fplugins%22%2C%20%22slug%22%3A%20%22woocommerce%22%20%7D%2C%0A%20%20%20%20%20%20%22options%22%3A%20%7B%20%22activate%22%3A%20true%20%7D%20%7D%2C%0A%20%20%20%20%7B%20%22step%22%3A%20%22login%22%2C%20%22username%22%3A%20%22admin%22%20%7D%0A%20%20%5D%0A%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-blueprint/my-plugin.php",
+        "woocommerce/woocommerce.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-blueprint/my-plugin.php": "Preview my-plugin",
+        "woocommerce/woocommerce.php": "WooCommerce"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-hosted",
+    "url": "https://playground.wordpress.net?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fadamziel%2Fplayground-preview-checks%2Fmain%2Fblueprint.json",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks-main-at-plugins-my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "Hosted preview recipe",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks-main-at-plugins-my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-comment",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-comment%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-comment/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-comment/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-description-template",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-description-template%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-description-template/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-description-template/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/direct-comment-template",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22baseline%2Fdirect-comment-template%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-comment-template/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-baseline-direct-comment-template/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-plugin",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-12-c4176844f50330883abb3184fe777658fa908902-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-theme",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installTheme%22%2C%22themeZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-13-49786107703d1e9ffabcbb79b19ef5845499fa37-my-theme.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [],
+      "theme": "my-theme",
+      "themeName": "Preview Theme",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-monorepo",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-14-863973d42e400fab8d9438b4be8ecc789fec964c-site-toolkit.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-14-863973d42e400fab8d9438b4be8ecc789fec964c-site-analytics.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "site-analytics/site-analytics.php",
+        "site-toolkit/site-toolkit.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "site-analytics/site-analytics.php": "Preview site-analytics",
+        "site-toolkit/site-toolkit.php": "Preview site-toolkit"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-selective",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-15-29d6ad75d96b475216fb1b5c8f81ca9f2abbec18-alpha.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "alpha/alpha.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "alpha/alpha.php": "Preview alpha"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-composer",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-16-be2cd181c33e55d07e7d68b771cf3eb6030e395a-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": true,
+      "vite": true,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-custom",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22landingPage%22%3A%22%2Fwp-admin%2Fadmin.php%3Fpage%3Dmy-plugin%22%2C%22phpExtensionBundles%22%3A%5B%22kitchen-sink%22%5D%2C%22steps%22%3A%5B%7B%22step%22%3A%22login%22%2C%22username%22%3A%22admin%22%2C%22password%22%3A%22password%22%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-17-0cc2b7de28466147a4bd7b3b2bdd81be0d52e2f1-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": true,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "landingResponse": {
+      "status": 200,
+      "path": "/wp-admin/admin.php?page=my-plugin"
+    },
+    "landingPageWorks": true,
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/build-comment",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-18-ca5fd78e4aeb54cc879b8de14e14a1c68957160b-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-root",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-root%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-root/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-root/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-subdir",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-subdir%22%2C%22path%22%3A%22plugins%2Fmy-awesome-plugin%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-subdir-at-plugins-my-awesome-plugin/my-awesome-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-subdir-at-plugins-my-awesome-plugin/my-awesome-plugin.php": "Preview my-awesome-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-theme",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installTheme%22%2C%22themeData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-theme%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [],
+      "theme": "https-github.com-adamziel-playground-preview-checks.git-current-direct-theme",
+      "themeName": "Preview Theme",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-both",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-both%22%2C%22path%22%3A%22plugins%2Fmy-plugin%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installTheme%22%2C%22themeData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-both%22%2C%22path%22%3A%22themes%2Fmy-theme%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-both-at-plugins-my-plugin/my-plugin.php"
+      ],
+      "theme": "https-github.com-adamziel-playground-preview-checks.git-current-direct-both-at-themes-my-theme",
+      "themeName": "Preview Theme",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-both-at-plugins-my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-blueprint",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%0A%20%20%22%24schema%22%3A%20%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%0A%20%20%22preferredVersions%22%3A%20%7B%20%22php%22%3A%20%228.3%22%2C%20%22wp%22%3A%20%22latest%22%20%7D%2C%0A%20%20%22steps%22%3A%20%5B%0A%20%20%20%20%7B%20%22step%22%3A%20%22installPlugin%22%2C%0A%20%20%20%20%20%20%22pluginData%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22resource%22%3A%20%22git%3Adirectory%22%2C%0A%20%20%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%0A%20%20%20%20%20%20%20%20%22ref%22%3A%20%22current%2Fdirect-blueprint%22%2C%0A%20%20%20%20%20%20%20%20%22path%22%3A%20%22%2F%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22options%22%3A%20%7B%20%22activate%22%3A%20true%20%7D%20%7D%2C%0A%20%20%20%20%7B%20%22step%22%3A%20%22installPlugin%22%2C%0A%20%20%20%20%20%20%22pluginData%22%3A%20%7B%20%22resource%22%3A%20%22wordpress.org%2Fplugins%22%2C%20%22slug%22%3A%20%22woocommerce%22%20%7D%2C%0A%20%20%20%20%20%20%22options%22%3A%20%7B%20%22activate%22%3A%20true%20%7D%20%7D%2C%0A%20%20%20%20%7B%20%22step%22%3A%20%22login%22%2C%20%22username%22%3A%20%22admin%22%20%7D%0A%20%20%5D%0A%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-blueprint/my-plugin.php",
+        "woocommerce/woocommerce.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-blueprint/my-plugin.php": "Preview my-plugin",
+        "woocommerce/woocommerce.php": "WooCommerce"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-hosted",
+    "url": "https://playground.wordpress.net?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fadamziel%2Fplayground-preview-checks%2Fmain%2Fblueprint.json",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks-main-at-plugins-my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "Hosted preview recipe",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks-main-at-plugins-my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-comment",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-comment%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-comment/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-comment/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-description-template",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-description-template%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-description-template/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-description-template/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/direct-comment-template",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22preferredVersions%22%3A%7B%22php%22%3A%228.2%22%2C%22wp%22%3A%22latest%22%7D%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginData%22%3A%7B%22resource%22%3A%22git%3Adirectory%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%22ref%22%3A%22current%2Fdirect-comment-template%22%2C%22path%22%3A%22%2F%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-comment-template/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "https-github.com-adamziel-playground-preview-checks.git-current-direct-comment-template/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.2.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/build-theme",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installTheme%22%2C%22themeZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-28-5a2ef1f2f002c3005d91161cda788389e78622a0-my-theme.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [],
+      "theme": "my-theme",
+      "themeName": "Preview Theme",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/build-monorepo",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-29-127ddbc583dc5f4e3451d001cc473f414c6cfda4-site-toolkit.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-29-127ddbc583dc5f4e3451d001cc473f414c6cfda4-site-analytics.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "site-analytics/site-analytics.php",
+        "site-toolkit/site-toolkit.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "site-analytics/site-analytics.php": "Preview site-analytics",
+        "site-toolkit/site-toolkit.php": "Preview site-toolkit"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/build-selective",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-30-cb56b75136ea2339a8470c17fafc6efc52e9659d-alpha.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "alpha/alpha.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "alpha/alpha.php": "Preview alpha"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/build-composer",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-31-8a94dd93956ead5030eb916338e5dd7902c1f06c-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": true,
+      "vite": true,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/build-custom",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22landingPage%22%3A%22%2Fwp-admin%2Fadmin.php%3Fpage%3Dmy-plugin%22%2C%22phpExtensionBundles%22%3A%5B%22kitchen-sink%22%5D%2C%22steps%22%3A%5B%7B%22step%22%3A%22login%22%2C%22username%22%3A%22admin%22%2C%22password%22%3A%22password%22%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-32-261e1630bc156360c7b1a5f0b8c3e73965ce2dea-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": true,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "landingResponse": {
+      "status": 200,
+      "path": "/wp-admin/admin.php?page=my-plugin"
+    },
+    "landingPageWorks": true,
+    "status": "pass"
+  },
+  {
+    "branch": "current/build-comment",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-33-8cbabeed6fd35eea660aaf9f07c5acd7c2cf208f-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/legacy-current",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22steps%22%3A%20%5B%7B%22step%22%3A%20%22installPlugin%22%2C%20%22pluginData%22%3A%20%7B%22resource%22%3A%20%22url%22%2C%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Flegacy-artifacts%2Fpr-34-b372452cc1f9234d8c7ba149751f4f0ff108e4c4.zip%22%7D%2C%20%22options%22%3A%20%7B%22activate%22%3A%20true%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "baseline/legacy-workflow",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22steps%22%3A%20%5B%7B%22step%22%3A%20%22installPlugin%22%2C%20%22pluginData%22%3A%20%7B%22resource%22%3A%20%22url%22%2C%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Flegacy-artifacts%2Fpr-35-ec3e55a3ce41ea40b8d07459ada6fab3a6848626.zip%22%7D%2C%20%22options%22%3A%20%7B%22activate%22%3A%20true%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  },
+  {
+    "branch": "current/legacy-current",
+    "url": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22steps%22%3A%20%5B%7B%22step%22%3A%20%22installPlugin%22%2C%20%22pluginData%22%3A%20%7B%22resource%22%3A%20%22url%22%2C%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Flegacy-artifacts%2Fpr-36-6af95424bad1dfa88e58ad7f2f0965377a1309b6.zip%22%7D%2C%20%22options%22%3A%20%7B%22activate%22%3A%20true%7D%7D%5D%7D",
+    "state": {
+      "plugins": [
+        "my-plugin/my-plugin.php"
+      ],
+      "theme": "twentytwentyfive",
+      "themeName": "Twenty Twenty-Five",
+      "blogname": "My WordPress Website",
+      "composer": false,
+      "vite": false,
+      "pluginNames": {
+        "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+        "hello.php": "Hello Dolly",
+        "my-plugin/my-plugin.php": "Preview my-plugin"
+      },
+      "wp": "7.1",
+      "php": "8.3.33"
+    },
+    "status": "pass"
+  }
+]

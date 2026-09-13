@@ -1,0 +1,22 @@
+{
+  "branch": "current/legacy-current",
+  "case": "legacy-current",
+  "type": "legacy",
+  "links": [
+    "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22steps%22%3A%20%5B%7B%22step%22%3A%20%22installPlugin%22%2C%20%22pluginData%22%3A%20%7B%22resource%22%3A%20%22url%22%2C%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Flegacy-artifacts%2Fpr-36-6af95424bad1dfa88e58ad7f2f0965377a1309b6.zip%22%7D%2C%20%22options%22%3A%20%7B%22activate%22%3A%20true%7D%7D%5D%7D"
+  ],
+  "blueprint": {
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginData": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/playground-preview-checks/releases/download/legacy-artifacts/pr-36-6af95424bad1dfa88e58ad7f2f0965377a1309b6.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      }
+    ]
+  }
+}

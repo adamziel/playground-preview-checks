@@ -1,0 +1,23 @@
+{
+  "branch": "current/build-theme",
+  "case": "build-theme",
+  "type": "build",
+  "links": [
+    "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installTheme%22%2C%22themeZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-28-5a2ef1f2f002c3005d91161cda788389e78622a0-my-theme.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D"
+  ],
+  "blueprint": {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "steps": [
+      {
+        "step": "installTheme",
+        "themeZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-28-5a2ef1f2f002c3005d91161cda788389e78622a0-my-theme.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      }
+    ]
+  }
+}

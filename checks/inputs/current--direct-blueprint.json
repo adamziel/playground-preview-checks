@@ -1,0 +1,43 @@
+{
+  "branch": "current/direct-blueprint",
+  "case": "direct-blueprint",
+  "type": "direct",
+  "links": [
+    "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%0A%20%20%22%24schema%22%3A%20%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%0A%20%20%22preferredVersions%22%3A%20%7B%20%22php%22%3A%20%228.3%22%2C%20%22wp%22%3A%20%22latest%22%20%7D%2C%0A%20%20%22steps%22%3A%20%5B%0A%20%20%20%20%7B%20%22step%22%3A%20%22installPlugin%22%2C%0A%20%20%20%20%20%20%22pluginData%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22resource%22%3A%20%22git%3Adirectory%22%2C%0A%20%20%20%20%20%20%20%20%22url%22%3A%20%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fplayground-preview-checks.git%22%2C%0A%20%20%20%20%20%20%20%20%22ref%22%3A%20%22current%2Fdirect-blueprint%22%2C%0A%20%20%20%20%20%20%20%20%22path%22%3A%20%22%2F%22%0A%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%22options%22%3A%20%7B%20%22activate%22%3A%20true%20%7D%20%7D%2C%0A%20%20%20%20%7B%20%22step%22%3A%20%22installPlugin%22%2C%0A%20%20%20%20%20%20%22pluginData%22%3A%20%7B%20%22resource%22%3A%20%22wordpress.org%2Fplugins%22%2C%20%22slug%22%3A%20%22woocommerce%22%20%7D%2C%0A%20%20%20%20%20%20%22options%22%3A%20%7B%20%22activate%22%3A%20true%20%7D%20%7D%2C%0A%20%20%20%20%7B%20%22step%22%3A%20%22login%22%2C%20%22username%22%3A%20%22admin%22%20%7D%0A%20%20%5D%0A%7D"
+  ],
+  "blueprint": {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "preferredVersions": {
+      "php": "8.3",
+      "wp": "latest"
+    },
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginData": {
+          "resource": "git:directory",
+          "url": "https://github.com/adamziel/playground-preview-checks.git",
+          "ref": "current/direct-blueprint",
+          "path": "/"
+        },
+        "options": {
+          "activate": true
+        }
+      },
+      {
+        "step": "installPlugin",
+        "pluginData": {
+          "resource": "wordpress.org/plugins",
+          "slug": "woocommerce"
+        },
+        "options": {
+          "activate": true
+        }
+      },
+      {
+        "step": "login",
+        "username": "admin"
+      }
+    ]
+  }
+}

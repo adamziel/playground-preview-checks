@@ -1,0 +1,322 @@
+[
+  {
+    "branch": "current/build-plugin",
+    "status": "pass",
+    "sourceRunId": 34726850618,
+    "artifactId": 10308440280,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-1-dee2bca61eb3d8240c125b928de0380a4709490e-my-plugin.zip",
+        "sha256": "0bbfe2fd3b3e882449e8ba18c92453f472b5888b965913a440f492ab7e982f4f",
+        "bytes": 698,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/legacy-workflow",
+    "status": "pass",
+    "sourceRunId": 34726852361,
+    "artifactId": 10307554467,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/legacy-artifacts/pr-2-55f86c878a82567a8f07441772eab5a00daea212.zip",
+        "sha256": "3bbbfcc40dd8a4bb1d2ca4c94b1e15a19d686aaa1ce16b9b9d050e371ae29c72",
+        "bytes": 705,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-plugin",
+    "status": "pass",
+    "sourceRunId": 34726904767,
+    "artifactId": 10307584338,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-12-c4176844f50330883abb3184fe777658fa908902-my-plugin.zip",
+        "sha256": "9ce99b6922082a0def190eb38e8319892e515e1e8e9e93943b2281225af77f13",
+        "bytes": 699,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-theme",
+    "status": "pass",
+    "sourceRunId": 34726907985,
+    "artifactId": 10307893895,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-13-49786107703d1e9ffabcbb79b19ef5845499fa37-my-theme.zip",
+        "sha256": "920c84cb9e63c6b5700885b3ce1a29c8e6b5461475617220fb407e5a0e5db03d",
+        "bytes": 626,
+        "roots": [
+          "my-theme"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-monorepo",
+    "status": "pass",
+    "sourceRunId": 34726910987,
+    "artifactId": 10307609328,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-14-863973d42e400fab8d9438b4be8ecc789fec964c-site-toolkit.zip",
+        "sha256": "7a473b59cecbaebe5a1e9e4f93015bb362b2f96757a9323c110db1699c48bfaf",
+        "bytes": 501,
+        "roots": [
+          "site-toolkit"
+        ]
+      },
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-14-863973d42e400fab8d9438b4be8ecc789fec964c-site-analytics.zip",
+        "sha256": "145f91ded3c96ca8dbafc7be78aeef0f57b7aecc70bf07b806e04da5b72cd999",
+        "bytes": 514,
+        "roots": [
+          "site-analytics"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-selective",
+    "status": "pass",
+    "sourceRunId": 34726914116,
+    "artifactId": 10308185616,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-15-29d6ad75d96b475216fb1b5c8f81ca9f2abbec18-alpha.zip",
+        "sha256": "3feb41684029a8239e98bb18be0349fd3fa1769299d2e41b2f4db0e837724131",
+        "bytes": 481,
+        "roots": [
+          "alpha"
+        ]
+      },
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-15-29d6ad75d96b475216fb1b5c8f81ca9f2abbec18-beta.zip",
+        "sha256": "397326d468fde22950f6ed6a815d5b6e7d3031cdaf76e83802dfaf901dee77fb",
+        "bytes": 447,
+        "roots": [
+          "beta"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-composer",
+    "status": "pass",
+    "sourceRunId": 34726916484,
+    "artifactId": 10307449917,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-16-be2cd181c33e55d07e7d68b771cf3eb6030e395a-my-plugin.zip",
+        "sha256": "927f913df09aa9d0a110a3999454a5947172e4f9976f3b234db4c782ce4bd562",
+        "bytes": 38522,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-custom",
+    "status": "pass",
+    "sourceRunId": 34726919192,
+    "artifactId": 10308320266,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-17-0cc2b7de28466147a4bd7b3b2bdd81be0d52e2f1-my-plugin.zip",
+        "sha256": "3d1e448bc9c5bd7fef5cd589fb0a3ce07b262e9253d4d7a5f4c1a7224da735c2",
+        "bytes": 47185,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/build-comment",
+    "status": "pass",
+    "sourceRunId": 34726922096,
+    "artifactId": 10307584361,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-18-ca5fd78e4aeb54cc879b8de14e14a1c68957160b-my-plugin.zip",
+        "sha256": "2082bed224a1d8cb817ce73cb1b87a486ce4b7e099a285f00a8b440e734ab1b7",
+        "bytes": 702,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/build-theme",
+    "status": "pass",
+    "sourceRunId": 34726948544,
+    "artifactId": 10307908916,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-28-5a2ef1f2f002c3005d91161cda788389e78622a0-my-theme.zip",
+        "sha256": "ab08accd910b1625450e2cf991ba2dde4f83e4a9b11057c93cc501326b6441b4",
+        "bytes": 626,
+        "roots": [
+          "my-theme"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/build-monorepo",
+    "status": "pass",
+    "sourceRunId": 34726951594,
+    "artifactId": 10308057006,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-29-7116613bd97a388c9fc517c71eecde071ab1d47e-site-toolkit.zip",
+        "sha256": "b53fa4f533b682b8dd64dc5fa39eb5c9859ff8c9a6a94dbfcf85f6ffa92c8d83",
+        "bytes": 501,
+        "roots": [
+          "site-toolkit"
+        ]
+      },
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-29-7116613bd97a388c9fc517c71eecde071ab1d47e-site-analytics.zip",
+        "sha256": "e867fef71fe63cc1bcc5b47b20b21b5d9b60b5fe9caad2a0c8e942a50ec09f15",
+        "bytes": 514,
+        "roots": [
+          "site-analytics"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/build-selective",
+    "status": "pass",
+    "sourceRunId": 34726953788,
+    "artifactId": 10307329371,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-30-cb56b75136ea2339a8470c17fafc6efc52e9659d-alpha.zip",
+        "sha256": "a49b326a9bb64a85b9fbc935b2b356f67fdb51002717962dc834312eab40e1a7",
+        "bytes": 481,
+        "roots": [
+          "alpha"
+        ]
+      },
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-30-cb56b75136ea2339a8470c17fafc6efc52e9659d-beta.zip",
+        "sha256": "39411f18949f4f3961d95001fd939ca1b163b442d0cc9a97c20dfdf5f8b4414a",
+        "bytes": 447,
+        "roots": [
+          "beta"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/build-composer",
+    "status": "pass",
+    "sourceRunId": 34726956964,
+    "artifactId": 10307264932,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-31-8a94dd93956ead5030eb916338e5dd7902c1f06c-my-plugin.zip",
+        "sha256": "e782e82319126dd004ee3b568248b7cf4506731b2b7d98c2f6edc95e02c653b8",
+        "bytes": 38521,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/build-custom",
+    "status": "pass",
+    "sourceRunId": 34726959586,
+    "artifactId": 10308155665,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-32-261e1630bc156360c7b1a5f0b8c3e73965ce2dea-my-plugin.zip",
+        "sha256": "8b9101f75f031a0797cd5b24c1b5a3643e0090d44c7d8dad2db0c2a551631412",
+        "bytes": 47184,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/build-comment",
+    "status": "pass",
+    "sourceRunId": 34726962342,
+    "artifactId": 10307504806,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/ci-artifacts/pr-33-8cbabeed6fd35eea660aaf9f07c5acd7c2cf208f-my-plugin.zip",
+        "sha256": "d1d182f26ce64c7739cd5143ba1f7600c7905177bac7dbe0768a50720697f6a0",
+        "bytes": 700,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/legacy-current",
+    "status": "pass",
+    "sourceRunId": 34726964079,
+    "artifactId": 10307734135,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/legacy-artifacts/pr-34-b372452cc1f9234d8c7ba149751f4f0ff108e4c4.zip",
+        "sha256": "7df0ea4b0daf2430ed894474d4aae013eccfe88d63b6ade8dff3c21f2bb81dbf",
+        "bytes": 703,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "baseline/legacy-workflow",
+    "status": "pass",
+    "sourceRunId": 34726967389,
+    "artifactId": 10308320309,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/legacy-artifacts/pr-35-ec3e55a3ce41ea40b8d07459ada6fab3a6848626.zip",
+        "sha256": "b5a971d331fa0bc5ad39d269a2f24f06f296f107be5feaa301f17968f2d113d0",
+        "bytes": 706,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  },
+  {
+    "branch": "current/legacy-current",
+    "status": "pass",
+    "sourceRunId": 34726969757,
+    "artifactId": 10308195644,
+    "downloads": [
+      {
+        "url": "https://github.com/adamziel/playground-preview-checks/releases/download/legacy-artifacts/pr-36-6af95424bad1dfa88e58ad7f2f0965377a1309b6.zip",
+        "sha256": "6fed417edeea11e3fe99902999283a93d2f22955afa615ca1660e94f08a658a0",
+        "bytes": 701,
+        "roots": [
+          "my-plugin"
+        ]
+      }
+    ]
+  }
+]

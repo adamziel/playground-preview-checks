@@ -1,0 +1,12 @@
+[
+  {
+    "check": "Switch to append-to-description",
+    "status": "pass",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727498774"
+  },
+  {
+    "check": "Switch to comment",
+    "status": "pass",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727512730"
+  }
+]

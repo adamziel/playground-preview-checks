@@ -1,0 +1,13 @@
+[
+  {
+    "check": "GitHub renders the title as text and preserves the template code span",
+    "status": "pass",
+    "comment": "https://github.com/adamziel/playground-preview-checks/pull/27#issuecomment-5649606175",
+    "title": "Recipe [alpha] *beta* & a plain title"
+  },
+  {
+    "check": "GitHub renders the README description template",
+    "status": "pass",
+    "pr": "https://github.com/adamziel/playground-preview-checks/pull/26"
+  }
+]

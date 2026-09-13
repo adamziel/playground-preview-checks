@@ -1,0 +1,65 @@
+[
+  {
+    "check": "Multi-ZIP update 2",
+    "status": "pass",
+    "head": "ce0ddb9b603d74c5b9b80dbe2b570d87842674db",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727299218",
+    "assets": [
+      "pr-29-7116613bd97a388c9fc517c71eecde071ab1d47e-site-analytics.zip",
+      "pr-29-7116613bd97a388c9fc517c71eecde071ab1d47e-site-toolkit.zip",
+      "pr-29-ce0ddb9b603d74c5b9b80dbe2b570d87842674db-site-analytics.zip",
+      "pr-29-ce0ddb9b603d74c5b9b80dbe2b570d87842674db-site-toolkit.zip"
+    ]
+  },
+  {
+    "check": "Multi-ZIP update 3",
+    "status": "pass",
+    "head": "c1fc73c66a329fb69544633c8bf50650bb7f6044",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727326354",
+    "assets": [
+      "pr-29-c1fc73c66a329fb69544633c8bf50650bb7f6044-site-analytics.zip",
+      "pr-29-c1fc73c66a329fb69544633c8bf50650bb7f6044-site-toolkit.zip",
+      "pr-29-ce0ddb9b603d74c5b9b80dbe2b570d87842674db-site-analytics.zip",
+      "pr-29-ce0ddb9b603d74c5b9b80dbe2b570d87842674db-site-toolkit.zip"
+    ]
+  },
+  {
+    "check": "Earlier build leaves the current preview unchanged",
+    "status": "pass",
+    "sourceRun": 34726951594,
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727354673"
+  },
+  {
+    "check": "Failed build leaves the last preview unchanged",
+    "status": "pass",
+    "head": "18d9901a6045e185b5149b7da43fad8fb89ffcf2",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727373182"
+  },
+  {
+    "check": "A successful build resumes publishing",
+    "status": "pass",
+    "head": "127ddbc583dc5f4e3451d001cc473f414c6cfda4",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727395880"
+  },
+  {
+    "check": "Comment update keeps the user note unchanged",
+    "status": "pass",
+    "userComment": "https://github.com/adamziel/playground-preview-checks/pull/27#issuecomment-5649605479",
+    "botComment": "https://github.com/adamziel/playground-preview-checks/pull/27#issuecomment-5649606175"
+  },
+  {
+    "check": "Renaming a PR updates the same comment",
+    "status": "pass",
+    "comment": "https://github.com/adamziel/playground-preview-checks/pull/27#issuecomment-5649606175"
+  },
+  {
+    "check": "Removing a description button restores one block and preserves user text",
+    "status": "pass",
+    "pr": 19
+  },
+  {
+    "check": "Reopening a PR keeps one bot comment",
+    "status": "pass",
+    "run": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727439583"
+  }
+]

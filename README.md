@@ -8,4 +8,4 @@ The `recipes/` directory contains the source YAML snippets. Workflow wrappers se
 
 Both plugin and theme files live here so each root-path recipe can run. Build inputs and templates are copied from the README. Theme packaging is a companion case. Local npm lockfiles supply the fixture dependency versions.
 
-Run records and results will be added after checks finish. Real fork PRs are outside this repository-only run.
+[Read the results](RESULTS.md) and [repeat a CLI check](checks/README.md). Real fork PRs are outside this repository-only run.

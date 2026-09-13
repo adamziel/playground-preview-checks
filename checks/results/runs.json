@@ -1,0 +1,1207 @@
+[
+  {
+    "branch": "current/build-plugin",
+    "case": "build-plugin",
+    "version": "current",
+    "number": 1,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/1",
+    "sourceRuns": [
+      {
+        "id": 34726850618,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726850618",
+        "head_sha": "dee2bca61eb3d8240c125b928de0380a4709490e",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726850618,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726850618",
+        "head_sha": "dee2bca61eb3d8240c125b928de0380a4709490e",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/legacy-workflow",
+    "case": "legacy-workflow",
+    "version": "current",
+    "number": 2,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/2",
+    "sourceRuns": [
+      {
+        "id": 34726852361,
+        "name": "Legacy preview build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726852361",
+        "head_sha": "55f86c878a82567a8f07441772eab5a00daea212",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726852361,
+        "name": "Legacy preview build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726852361",
+        "head_sha": "55f86c878a82567a8f07441772eab5a00daea212",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-root",
+    "case": "direct-root",
+    "version": "baseline",
+    "number": 3,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/3",
+    "sourceRuns": [
+      {
+        "id": 34726881994,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726881994",
+        "head_sha": "75f8ea22c5047083d786d79b5de338eb826b5864",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726881994,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726881994",
+        "head_sha": "75f8ea22c5047083d786d79b5de338eb826b5864",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-subdir",
+    "case": "direct-subdir",
+    "version": "baseline",
+    "number": 4,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/4",
+    "sourceRuns": [
+      {
+        "id": 34726884584,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726884584",
+        "head_sha": "8ea2ccef6616263174d5d4487e94e2140f7d2ae0",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726884584,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726884584",
+        "head_sha": "8ea2ccef6616263174d5d4487e94e2140f7d2ae0",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-theme",
+    "case": "direct-theme",
+    "version": "baseline",
+    "number": 5,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/5",
+    "sourceRuns": [
+      {
+        "id": 34726887404,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726887404",
+        "head_sha": "ffdba9d8632406b64b9a69adca5c872b26cb9737",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726887404,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726887404",
+        "head_sha": "ffdba9d8632406b64b9a69adca5c872b26cb9737",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-both",
+    "case": "direct-both",
+    "version": "baseline",
+    "number": 6,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/6",
+    "sourceRuns": [
+      {
+        "id": 34726889479,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726889479",
+        "head_sha": "063050d0330b6abb6a274f2c695da0d6226528a2",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726889479,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726889479",
+        "head_sha": "063050d0330b6abb6a274f2c695da0d6226528a2",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-blueprint",
+    "case": "direct-blueprint",
+    "version": "baseline",
+    "number": 7,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/7",
+    "sourceRuns": [
+      {
+        "id": 34727401123,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727401123",
+        "head_sha": "6809ed3f2a7ede3d4ed59b0d4b3e0d1863843dfa",
+        "run_attempt": 1
+      },
+      {
+        "id": 34726891561,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726891561",
+        "head_sha": "97da2ceb4a8700a3f3248194a5cd35f014f5140a",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726891561,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726891561",
+        "head_sha": "97da2ceb4a8700a3f3248194a5cd35f014f5140a",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": [
+      "Use current WordPress for the WooCommerce companion"
+    ]
+  },
+  {
+    "branch": "baseline/direct-hosted",
+    "case": "direct-hosted",
+    "version": "baseline",
+    "number": 8,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/8",
+    "sourceRuns": [
+      {
+        "id": 34726894154,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726894154",
+        "head_sha": "c67b591a0b242bac74ccffeb4898d7f9bc71a7bf",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726894154,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726894154",
+        "head_sha": "c67b591a0b242bac74ccffeb4898d7f9bc71a7bf",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-comment",
+    "case": "direct-comment",
+    "version": "baseline",
+    "number": 9,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/9",
+    "sourceRuns": [
+      {
+        "id": 34726896444,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726896444",
+        "head_sha": "8411583d79661c86d9f51d7a0c245cd2318a99cb",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726896444,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726896444",
+        "head_sha": "8411583d79661c86d9f51d7a0c245cd2318a99cb",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-description-template",
+    "case": "direct-description-template",
+    "version": "baseline",
+    "number": 10,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/10",
+    "sourceRuns": [
+      {
+        "id": 34726898459,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726898459",
+        "head_sha": "16789cb2d8c5c84b9c9f6cc28c81780c047e53eb",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726898459,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726898459",
+        "head_sha": "16789cb2d8c5c84b9c9f6cc28c81780c047e53eb",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/direct-comment-template",
+    "case": "direct-comment-template",
+    "version": "baseline",
+    "number": 11,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/11",
+    "sourceRuns": [
+      {
+        "id": 34727063357,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727063357",
+        "head_sha": "b585632de99a8561bde9b9f6900691fd7e891c6b",
+        "run_attempt": 1
+      },
+      {
+        "id": 34726902017,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726902017",
+        "head_sha": "45bf0b37c33c2a8e69e49e336f06bbcf36a7ba06",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726902017,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726902017",
+        "head_sha": "45bf0b37c33c2a8e69e49e336f06bbcf36a7ba06",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": [
+      "Supply github-token"
+    ]
+  },
+  {
+    "branch": "baseline/build-plugin",
+    "case": "build-plugin",
+    "version": "baseline",
+    "number": 12,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/12",
+    "sourceRuns": [
+      {
+        "id": 34726904767,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726904767",
+        "head_sha": "c4176844f50330883abb3184fe777658fa908902",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726904767,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726904767",
+        "head_sha": "c4176844f50330883abb3184fe777658fa908902",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/build-theme",
+    "case": "build-theme",
+    "version": "baseline",
+    "number": 13,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/13",
+    "sourceRuns": [
+      {
+        "id": 34726907985,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726907985",
+        "head_sha": "49786107703d1e9ffabcbb79b19ef5845499fa37",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726907985,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726907985",
+        "head_sha": "49786107703d1e9ffabcbb79b19ef5845499fa37",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/build-monorepo",
+    "case": "build-monorepo",
+    "version": "baseline",
+    "number": 14,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/14",
+    "sourceRuns": [
+      {
+        "id": 34726910987,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726910987",
+        "head_sha": "863973d42e400fab8d9438b4be8ecc789fec964c",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726910987,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726910987",
+        "head_sha": "863973d42e400fab8d9438b4be8ecc789fec964c",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/build-selective",
+    "case": "build-selective",
+    "version": "baseline",
+    "number": 15,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/15",
+    "sourceRuns": [
+      {
+        "id": 34726914116,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726914116",
+        "head_sha": "29d6ad75d96b475216fb1b5c8f81ca9f2abbec18",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726914116,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726914116",
+        "head_sha": "29d6ad75d96b475216fb1b5c8f81ca9f2abbec18",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/build-composer",
+    "case": "build-composer",
+    "version": "baseline",
+    "number": 16,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/16",
+    "sourceRuns": [
+      {
+        "id": 34726916484,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726916484",
+        "head_sha": "be2cd181c33e55d07e7d68b771cf3eb6030e395a",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726916484,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726916484",
+        "head_sha": "be2cd181c33e55d07e7d68b771cf3eb6030e395a",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/build-custom",
+    "case": "build-custom",
+    "version": "baseline",
+    "number": 17,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/17",
+    "sourceRuns": [
+      {
+        "id": 34726919192,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726919192",
+        "head_sha": "0cc2b7de28466147a4bd7b3b2bdd81be0d52e2f1",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726919192,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726919192",
+        "head_sha": "0cc2b7de28466147a4bd7b3b2bdd81be0d52e2f1",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/build-comment",
+    "case": "build-comment",
+    "version": "baseline",
+    "number": 18,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/18",
+    "sourceRuns": [
+      {
+        "id": 34726922096,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726922096",
+        "head_sha": "ca5fd78e4aeb54cc879b8de14e14a1c68957160b",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726922096,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726922096",
+        "head_sha": "ca5fd78e4aeb54cc879b8de14e14a1c68957160b",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-root",
+    "case": "direct-root",
+    "version": "current",
+    "number": 19,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/19",
+    "sourceRuns": [
+      {
+        "id": 34727428455,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727428455",
+        "head_sha": "947f3cae12702e00971b4ded2ff1435272e9a6f7",
+        "run_attempt": 1
+      },
+      {
+        "id": 34726924663,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726924663",
+        "head_sha": "947f3cae12702e00971b4ded2ff1435272e9a6f7",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726924663,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726924663",
+        "head_sha": "947f3cae12702e00971b4ded2ff1435272e9a6f7",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-subdir",
+    "case": "direct-subdir",
+    "version": "current",
+    "number": 20,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/20",
+    "sourceRuns": [
+      {
+        "id": 34726927343,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726927343",
+        "head_sha": "cef2ff6ab17f040763fab1978128779da8583bb5",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726927343,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726927343",
+        "head_sha": "cef2ff6ab17f040763fab1978128779da8583bb5",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-theme",
+    "case": "direct-theme",
+    "version": "current",
+    "number": 21,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/21",
+    "sourceRuns": [
+      {
+        "id": 34726929908,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726929908",
+        "head_sha": "950481d5a45bb75e05790879145d6f0a56ee42db",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726929908,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726929908",
+        "head_sha": "950481d5a45bb75e05790879145d6f0a56ee42db",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-both",
+    "case": "direct-both",
+    "version": "current",
+    "number": 22,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/22",
+    "sourceRuns": [
+      {
+        "id": 34726932878,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726932878",
+        "head_sha": "3c6c5a1cb4bcad9c012bd228273166d1c1f9549a",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726932878,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726932878",
+        "head_sha": "3c6c5a1cb4bcad9c012bd228273166d1c1f9549a",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-blueprint",
+    "case": "direct-blueprint",
+    "version": "current",
+    "number": 23,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/23",
+    "sourceRuns": [
+      {
+        "id": 34727401993,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727401993",
+        "head_sha": "ab8b435540e97696d02d8e6df7c778b1037e4c89",
+        "run_attempt": 1
+      },
+      {
+        "id": 34726935394,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726935394",
+        "head_sha": "7ecb33d8da2e1fdbea56fcb438ac32ea26a4a5ae",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726935394,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726935394",
+        "head_sha": "7ecb33d8da2e1fdbea56fcb438ac32ea26a4a5ae",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": [
+      "Use current WordPress for the WooCommerce companion"
+    ]
+  },
+  {
+    "branch": "current/direct-hosted",
+    "case": "direct-hosted",
+    "version": "current",
+    "number": 24,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/24",
+    "sourceRuns": [
+      {
+        "id": 34726937646,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726937646",
+        "head_sha": "4d6455ecf7050c5bce156dab8588e90e05e79027",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726937646,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726937646",
+        "head_sha": "4d6455ecf7050c5bce156dab8588e90e05e79027",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-comment",
+    "case": "direct-comment",
+    "version": "current",
+    "number": 25,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/25",
+    "sourceRuns": [
+      {
+        "id": 34726939895,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726939895",
+        "head_sha": "c3c5d40287063c809b466690c7b2bb15e215d156",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726939895,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726939895",
+        "head_sha": "c3c5d40287063c809b466690c7b2bb15e215d156",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-description-template",
+    "case": "direct-description-template",
+    "version": "current",
+    "number": 26,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/26",
+    "sourceRuns": [
+      {
+        "id": 34726942878,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726942878",
+        "head_sha": "3b59af8eb942b12c6caa86f3ec8ac98861096cd7",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726942878,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726942878",
+        "head_sha": "3b59af8eb942b12c6caa86f3ec8ac98861096cd7",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/direct-comment-template",
+    "case": "direct-comment-template",
+    "version": "current",
+    "number": 27,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/27",
+    "sourceRuns": [
+      {
+        "id": 34727512730,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727512730",
+        "head_sha": "122d1c6635eccd5fe3624730a137f2c244ac8f15",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727498774,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727498774",
+        "head_sha": "f5237dfece2e7be27bacd09535abc187d7cb1b00",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727439583,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727439583",
+        "head_sha": "17866fe43fd7142e1f124f5242b4e03a0146ed9d",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727417485,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727417485",
+        "head_sha": "17866fe43fd7142e1f124f5242b4e03a0146ed9d",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727064842,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727064842",
+        "head_sha": "17866fe43fd7142e1f124f5242b4e03a0146ed9d",
+        "run_attempt": 2
+      },
+      {
+        "id": 34726946098,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726946098",
+        "head_sha": "28f3f08495ba14db3afd5bd3bf3d0c3fb8f68cdb",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726946098,
+        "name": "Recipe previews",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726946098",
+        "head_sha": "28f3f08495ba14db3afd5bd3bf3d0c3fb8f68cdb",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": [
+      "Supply github-token"
+    ]
+  },
+  {
+    "branch": "current/build-theme",
+    "case": "build-theme",
+    "version": "current",
+    "number": 28,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/28",
+    "sourceRuns": [
+      {
+        "id": 34726948544,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726948544",
+        "head_sha": "5a2ef1f2f002c3005d91161cda788389e78622a0",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726948544,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726948544",
+        "head_sha": "5a2ef1f2f002c3005d91161cda788389e78622a0",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/build-monorepo",
+    "case": "build-monorepo",
+    "version": "current",
+    "number": 29,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/29",
+    "sourceRuns": [
+      {
+        "id": 34727386786,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727386786",
+        "head_sha": "127ddbc583dc5f4e3451d001cc473f414c6cfda4",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727366107,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727366107",
+        "head_sha": "18d9901a6045e185b5149b7da43fad8fb89ffcf2",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727318314,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727318314",
+        "head_sha": "c1fc73c66a329fb69544633c8bf50650bb7f6044",
+        "run_attempt": 1
+      },
+      {
+        "id": 34727289391,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34727289391",
+        "head_sha": "ce0ddb9b603d74c5b9b80dbe2b570d87842674db",
+        "run_attempt": 1
+      },
+      {
+        "id": 34726951594,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726951594",
+        "head_sha": "7116613bd97a388c9fc517c71eecde071ab1d47e",
+        "run_attempt": 2
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726951594,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726951594",
+        "head_sha": "7116613bd97a388c9fc517c71eecde071ab1d47e",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/build-selective",
+    "case": "build-selective",
+    "version": "current",
+    "number": 30,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/30",
+    "sourceRuns": [
+      {
+        "id": 34726953788,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726953788",
+        "head_sha": "cb56b75136ea2339a8470c17fafc6efc52e9659d",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726953788,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726953788",
+        "head_sha": "cb56b75136ea2339a8470c17fafc6efc52e9659d",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/build-composer",
+    "case": "build-composer",
+    "version": "current",
+    "number": 31,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/31",
+    "sourceRuns": [
+      {
+        "id": 34726956964,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726956964",
+        "head_sha": "8a94dd93956ead5030eb916338e5dd7902c1f06c",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726956964,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726956964",
+        "head_sha": "8a94dd93956ead5030eb916338e5dd7902c1f06c",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/build-custom",
+    "case": "build-custom",
+    "version": "current",
+    "number": 32,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/32",
+    "sourceRuns": [
+      {
+        "id": 34726959586,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726959586",
+        "head_sha": "261e1630bc156360c7b1a5f0b8c3e73965ce2dea",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726959586,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726959586",
+        "head_sha": "261e1630bc156360c7b1a5f0b8c3e73965ce2dea",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/build-comment",
+    "case": "build-comment",
+    "version": "current",
+    "number": 33,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/33",
+    "sourceRuns": [
+      {
+        "id": 34726962342,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726962342",
+        "head_sha": "8cbabeed6fd35eea660aaf9f07c5acd7c2cf208f",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726962342,
+        "name": "PR Preview - Build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726962342",
+        "head_sha": "8cbabeed6fd35eea660aaf9f07c5acd7c2cf208f",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/legacy-current",
+    "case": "legacy-current",
+    "version": "baseline",
+    "number": 34,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/34",
+    "sourceRuns": [
+      {
+        "id": 34726964079,
+        "name": "Legacy current run",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726964079",
+        "head_sha": "b372452cc1f9234d8c7ba149751f4f0ff108e4c4",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726964079,
+        "name": "Legacy current run",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726964079",
+        "head_sha": "b372452cc1f9234d8c7ba149751f4f0ff108e4c4",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "baseline/legacy-workflow",
+    "case": "legacy-workflow",
+    "version": "baseline",
+    "number": 35,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/35",
+    "sourceRuns": [
+      {
+        "id": 34726967389,
+        "name": "Legacy preview build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726967389",
+        "head_sha": "ec3e55a3ce41ea40b8d07459ada6fab3a6848626",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726967389,
+        "name": "Legacy preview build",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726967389",
+        "head_sha": "ec3e55a3ce41ea40b8d07459ada6fab3a6848626",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  },
+  {
+    "branch": "current/legacy-current",
+    "case": "legacy-current",
+    "version": "current",
+    "number": 36,
+    "url": "https://github.com/adamziel/playground-preview-checks/pull/36",
+    "sourceRuns": [
+      {
+        "id": 34726969757,
+        "name": "Legacy current run",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726969757",
+        "head_sha": "6af95424bad1dfa88e58ad7f2f0965377a1309b6",
+        "run_attempt": 1
+      }
+    ],
+    "originalSourceRuns": [
+      {
+        "id": 34726969757,
+        "name": "Legacy current run",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/adamziel/playground-preview-checks/actions/runs/34726969757",
+        "head_sha": "6af95424bad1dfa88e58ad7f2f0965377a1309b6",
+        "run_attempt": 1
+      }
+    ],
+    "adjustments": []
+  }
+]

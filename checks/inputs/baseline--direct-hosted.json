@@ -1,0 +1,9 @@
+{
+  "branch": "baseline/direct-hosted",
+  "case": "direct-hosted",
+  "type": "direct",
+  "links": [
+    "https://playground.wordpress.net?blueprint-url=https%3A%2F%2Fraw.githubusercontent.com%2Fadamziel%2Fplayground-preview-checks%2Fmain%2Fblueprint.json"
+  ],
+  "blueprintUrl": "https://raw.githubusercontent.com/adamziel/playground-preview-checks/main/blueprint.json"
+}

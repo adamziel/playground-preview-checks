@@ -1,0 +1,8 @@
+{
+  "name": "playground-recipe-checks",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@wp-playground/cli": "3.1.53"
+  }
+}
