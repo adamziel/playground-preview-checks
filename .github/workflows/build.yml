@@ -124,9 +124,11 @@ jobs:
         site-analytics=build/site-analytics.zip
 
         '
-      build-command: "set -euo pipefail\nmkdir -p build stage\nfor slug in site-toolkit site-analytics; do\n  rm -rf \"stage/$slug\"\
-        \n  mkdir -p \"stage/$slug\"\n  rsync -a \"plugins/$slug/\" \"stage/$slug/\"\n  ( cd stage && zip -rq \"../build/$slug.zip\"\
-        \ \"$slug\" )\ndone\n"
+      build-command: 'echo "Deliberate fixture build failure"
+
+        exit 1
+
+        '
   current-build-selective:
     if: ${{ github.head_ref == 'current/build-selective' }}
     uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
