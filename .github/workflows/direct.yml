@@ -62,7 +62,7 @@ jobs:
     - uses: adamziel/action-wp-playground-pr-preview@5e92f5e3c80d06126f22e83e4bb21221fbbd3e7f
       with:
         blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"preferredVersions\"\
-          : { \"php\": \"8.3\", \"wp\": \"6.6\" },\n  \"steps\": [\n    { \"step\": \"installPlugin\",\n      \"pluginData\"\
+          : { \"php\": \"8.3\", \"wp\": \"latest\" },\n  \"steps\": [\n    { \"step\": \"installPlugin\",\n      \"pluginData\"\
           : {\n        \"resource\": \"git:directory\",\n        \"url\": \"https://github.com/${{ github.repository }}.git\"\
           ,\n        \"ref\": \"${{ github.event.pull_request.head.ref }}\",\n        \"path\": \"/\"\n      },\n      \"\
           options\": { \"activate\": true } },\n    { \"step\": \"installPlugin\",\n      \"pluginData\": { \"resource\":\
