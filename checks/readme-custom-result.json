@@ -1,0 +1,26 @@
+{
+  "branch": "current/build-custom",
+  "state": {
+    "plugins": [
+      "my-plugin/my-plugin.php"
+    ],
+    "theme": "twentytwentyfive",
+    "themeName": "Twenty Twenty-Five",
+    "blogname": "My WordPress Website",
+    "composer": true,
+    "vite": false,
+    "pluginNames": {
+      "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+      "hello.php": "Hello Dolly",
+      "my-plugin/my-plugin.php": "Preview my-plugin"
+    },
+    "wp": "7.1",
+    "php": "8.3.33"
+  },
+  "landingResponse": {
+    "status": 200,
+    "path": "/wp-admin/admin.php?page=my-plugin"
+  },
+  "landingPageWorks": true,
+  "status": "pass"
+}

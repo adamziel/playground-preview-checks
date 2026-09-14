@@ -100,3 +100,18 @@ The same ZIP URLs downloaded without login and booted WordPress through the CLI.
 - [Download hashes](checks/results/downloads.json).
 - Original documentation snippets are under `recipes/`; workflow wrappers select a case by branch.
 - The open PRs are left in place for inspection. No existing example PR was used as a test target.
+
+## README follow-up — 2026-09-14
+
+The first README update was merged as [action PR #8](https://github.com/adamziel/action-wp-playground-pr-preview/pull/8). A full README pass found additional wording and recipe issues.
+
+- All 20 YAML blocks parse. All nine direct-action examples pass `github-token`; reusable publisher calls get it internally.
+- All 24 input names in the action, build, and publish reference tables match their definitions.
+- The standalone ZIP command previously stopped because `stage` did not exist. The revised command creates both directories and excludes staging/output paths. A clean-tree check produced only `my-plugin/my-plugin.php` inside its slug folder.
+- Removed the workflow-level permission block from this repository's publish caller, leaving the required permissions on each calling job. Both [single-plugin publishing](https://github.com/adamziel/playground-preview-checks/actions/runs/34832601433) and [custom-Blueprint publishing](https://github.com/adamziel/playground-preview-checks/actions/runs/34832597653) passed. Their source builds also passed on attempt 2.
+- The custom Blueprint now omits the unused `phpExtensionBundles` setting and deprecated login password. The posted PR button contains that exact Blueprint after artifact URL substitution.
+- The [updated Blueprint input](checks/inputs/readme--build-custom.json) passed the Playground CLI check: the fixture plugin activated, login worked, and the custom admin page returned HTTP 200. See the [recorded result](checks/readme-custom-result.json).
+- Local action checks confirmed the documented marker, hosted-Blueprint, and output behavior. The action repository's 105 tests passed again.
+- GitHub rendered the revised ZIP command as one complete code block.
+
+These checks used only this disposable repository. No live example or upstream version tag changed. The browser and genuine fork-PR limits described above still apply.
