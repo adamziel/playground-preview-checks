@@ -5,9 +5,6 @@ name: PR Preview - Publish
     - PR Preview - Build
     types:
     - completed
-permissions:
-  contents: write
-  pull-requests: write
 jobs:
   baseline-build-plugin:
     if: ${{ github.event.workflow_run.head_branch == 'baseline/build-plugin' }}
@@ -124,10 +121,7 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"landingPage\": \"/wp-admin/admin.php?page=my-plugin\"\
-        ,\n  \"phpExtensionBundles\": [\"kitchen-sink\"],\n  \"steps\": [\n    { \"step\": \"login\", \"username\": \"admin\"\
-        , \"password\": \"password\" },\n    { \"step\": \"installPlugin\",\n      \"pluginZipFile\": { \"resource\": \"url\"\
-        , \"url\": \"{{ARTIFACT_URL:my-plugin}}\" },\n      \"options\": { \"activate\": true } }\n  ]\n}\n"
+      blueprint: "{\n  \"$schema\": \"https://playground.wordpress.net/blueprint-schema.json\",\n  \"landingPage\": \"/wp-admin/admin.php?page=my-plugin\",\n  \"steps\": [\n    { \"step\": \"login\", \"username\": \"admin\" },\n    { \"step\": \"installPlugin\",\n      \"pluginZipFile\": { \"resource\": \"url\", \"url\": \"{{ARTIFACT_URL:my-plugin}}\" },\n      \"options\": { \"activate\": true } }\n  ]\n}\n"
   current-build-comment:
     if: ${{ github.event.workflow_run.head_branch == 'current/build-comment' }}
     uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@4ae782ed46e391ac203fdbbf6959fd7d0b55f40e
