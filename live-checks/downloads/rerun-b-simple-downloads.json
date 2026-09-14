@@ -1,0 +1,14 @@
+[
+  {
+    "asset": "pr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip",
+    "id": 563275240,
+    "url": "https://github.com/adamziel/preview-check-simple/releases/download/ci-artifacts/pr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip",
+    "sha256": "495fa070b715ee8ffd6a20dbe79a6f05359f3aad5259d4b2ca33211304a40e67",
+    "sourceRun": "https://github.com/adamziel/preview-check-simple/actions/runs/34838883071",
+    "bytes": 695,
+    "entries": [
+      "my-plugin.php",
+      "built-at.txt"
+    ]
+  }
+]

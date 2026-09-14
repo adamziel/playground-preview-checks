@@ -1,0 +1,28 @@
+{
+  "case": "selective",
+  "pr": "https://github.com/adamziel/preview-check-selective/pull/2",
+  "sha": "50b33c43fda17ad6f3adf48b6e51a9f931478719",
+  "state": {
+    "active": [
+      "pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-beta/beta.php"
+    ],
+    "plugins": {
+      "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+      "pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-beta/beta.php": "Beta (V3 Example Selective)",
+      "hello.php": "Hello Dolly"
+    },
+    "notices": "Beta is active. Preview Beta.",
+    "composer": false,
+    "autoload": false,
+    "script": null,
+    "files": {
+      "pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-beta/beta.php": {
+        "builtAt": null,
+        "js": null
+      }
+    },
+    "wp": "7.1",
+    "php": "8.3.33"
+  },
+  "status": "pass"
+}

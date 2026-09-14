@@ -1,0 +1,21 @@
+{
+  "blueprint": {
+    "steps": []
+  },
+  "console": {
+    "content": [
+      {
+        "type": "text",
+        "text": "## Console messages\nShowing 1-2 of 2 (Page 1 of 1).\nmsgid=1 [warn] Loaded WordPress version (7.1) differs from requested version (latest). (1 args)\nmsgid=10 [error] Uncaught (in promise) (0 args)\nNote: stack trace line and column numbers use 1-based indexing"
+      }
+    ]
+  },
+  "dom": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n[{\"title\":\"Plugins ‹ My WordPress Website — WordPress\",\"notices\":[\"\"],\"active\":[]}]\n```"
+      }
+    ]
+  }
+}

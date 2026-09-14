@@ -1,0 +1,38 @@
+[
+  {
+    "source": "adamziel/preview-in-playground-button-v3-example-simple",
+    "head": "ccf7b8ccce93bedec8398fc8d44ddf0fa0a88d25",
+    "mainUnchanged": true,
+    "pullsUnchanged": true,
+    "releasesUnchanged": true,
+    "pullCount": 3,
+    "releaseCount": 1
+  },
+  {
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo",
+    "head": "d987ef51e0c51829f57f94bf4faa3029d606864f",
+    "mainUnchanged": true,
+    "pullsUnchanged": true,
+    "releasesUnchanged": true,
+    "pullCount": 3,
+    "releaseCount": 1
+  },
+  {
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo-selective",
+    "head": "ff5033086a259a8ca9221e3524599b57f162f8fb",
+    "mainUnchanged": true,
+    "pullsUnchanged": true,
+    "releasesUnchanged": true,
+    "pullCount": 3,
+    "releaseCount": 1
+  },
+  {
+    "source": "adamziel/preview-in-playground-button-v3-example-composer-vite",
+    "head": "4050f4ea095407aedf8d5e93d6cda08398e305a0",
+    "mainUnchanged": true,
+    "pullsUnchanged": true,
+    "releasesUnchanged": true,
+    "pullCount": 2,
+    "releaseCount": 1
+  }
+]

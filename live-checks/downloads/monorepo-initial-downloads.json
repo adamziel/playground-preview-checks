@@ -1,0 +1,24 @@
+[
+  {
+    "asset": "pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-analytics.zip",
+    "id": 563183463,
+    "url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-analytics.zip",
+    "sha256": "009c58170286375f2279be8b9945aba1eb57392bbff8b9311bb176ca266d16d1",
+    "sourceRun": "https://github.com/adamziel/preview-check-monorepo/actions/runs/34834566887",
+    "bytes": 428,
+    "entries": [
+      "site-analytics.php"
+    ]
+  },
+  {
+    "asset": "pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-toolkit.zip",
+    "id": 563183487,
+    "url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-toolkit.zip",
+    "sha256": "2f4f3998a4f975c4d6a26a76654c824caf7949f0310f8dabe5cbae02fcdd09ab",
+    "sourceRun": "https://github.com/adamziel/preview-check-monorepo/actions/runs/34834566887",
+    "bytes": 423,
+    "entries": [
+      "site-toolkit.php"
+    ]
+  }
+]

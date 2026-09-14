@@ -1,0 +1,82 @@
+[
+  {
+    "case": "selective",
+    "repo": "adamziel/preview-check-selective",
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo-selective",
+    "sourceSha": "ff5033086a259a8ca9221e3524599b57f162f8fb",
+    "baseSha": "67eaf8921056738448eb585c4cfb1747c84dac52",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "beta-only",
+    "sha": "50b33c43fda17ad6f3adf48b6e51a9f931478719",
+    "pr": 2,
+    "url": "https://github.com/adamziel/preview-check-selective/pull/2",
+    "markerFiles": [
+      "plugins/alpha/alpha.php"
+    ],
+    "marker": "Preview Beta",
+    "expectedFiles": [
+      "beta.php"
+    ]
+  },
+  {
+    "case": "selective",
+    "repo": "adamziel/preview-check-selective",
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo-selective",
+    "sourceSha": "ff5033086a259a8ca9221e3524599b57f162f8fb",
+    "baseSha": "67eaf8921056738448eb585c4cfb1747c84dac52",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "both-plugins",
+    "sha": "963dbe4cafd555229b2b7374b8e1891c63e96cf8",
+    "pr": 3,
+    "url": "https://github.com/adamziel/preview-check-selective/pull/3",
+    "markerFiles": [
+      "plugins/alpha/alpha.php"
+    ],
+    "marker": "Preview Both",
+    "expectedFiles": [
+      "alpha.php",
+      "beta.php"
+    ]
+  },
+  {
+    "case": "selective",
+    "repo": "adamziel/preview-check-selective",
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo-selective",
+    "sourceSha": "ff5033086a259a8ca9221e3524599b57f162f8fb",
+    "baseSha": "67eaf8921056738448eb585c4cfb1747c84dac52",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "docs-only",
+    "sha": "70603efc9647fee4bb5a174ee7a96ddfd899da4d",
+    "pr": 4,
+    "url": "https://github.com/adamziel/preview-check-selective/pull/4",
+    "markerFiles": [
+      "plugins/alpha/alpha.php"
+    ],
+    "marker": null,
+    "expectedFiles": [
+      "alpha.php",
+      "beta.php"
+    ]
+  },
+  {
+    "case": "monorepo",
+    "repo": "adamziel/preview-check-monorepo",
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo",
+    "sourceSha": "d987ef51e0c51829f57f94bf4faa3029d606864f",
+    "baseSha": "e98346492c8377327282158eddcba907351cc018",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "second-preview",
+    "sha": "809ded7847fb8b4479d50d535a5f84de86fd7487",
+    "pr": 2,
+    "url": "https://github.com/adamziel/preview-check-monorepo/pull/2",
+    "markerFiles": [
+      "plugins/site-toolkit/site-toolkit.php",
+      "plugins/site-analytics/site-analytics.php"
+    ],
+    "marker": "Second Preview",
+    "expectedFiles": [
+      "site-toolkit.php",
+      "site-analytics.php"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "case": "composer-vite",
+    "buildId": 34838889903,
+    "attempt": 2,
+    "publishId": 34839301759,
+    "sameBody": true,
+    "samePreviewUrl": true,
+    "comments": 0,
+    "sameAssetNames": true
+  },
+  {
+    "case": "monorepo",
+    "buildId": 34838884820,
+    "attempt": 2,
+    "publishId": 34839270714,
+    "sameBody": true,
+    "samePreviewUrl": true,
+    "comments": 0,
+    "sameAssetNames": true
+  },
+  {
+    "case": "selective",
+    "buildId": 34838887993,
+    "attempt": 2,
+    "publishId": 34839278257,
+    "sameBody": true,
+    "samePreviewUrl": true,
+    "comments": 0,
+    "sameAssetNames": true
+  },
+  {
+    "case": "simple",
+    "buildId": 34838883071,
+    "attempt": 2,
+    "publishId": 34839272329,
+    "sameBody": true,
+    "samePreviewUrl": true,
+    "comments": 0,
+    "sameAssetNames": true
+  }
+]

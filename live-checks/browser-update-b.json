@@ -1,0 +1,34 @@
+{
+  "composer-vite": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n[{\"title\":\"Plugins ‹ My WordPress Website — WordPress\",\"notices\":[\"Playground Demo is active. Preview B. JS counter: 38 / Preview B\",\"\",\"\"],\"active\":[{\"file\":\"playground-demo-plugin/playground-demo-plugin.php\",\"text\":\"Select Playground Demo (Composer + Vite)\\n\\t\\nPlayground Demo (Composer + Vite)\\nDeactivate\\n\\t\\n\\nSmallest realistic plugin that needs both `composer install` and `npm run build` before it can run.\\n\\nVersion 0.1.0\\n\\t\"}],\"counter\":\"38 / Preview B\"}]\n```"
+      }
+    ]
+  },
+  "monorepo": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n[{\"title\":\"Plugins ‹ My WordPress Website — WordPress\",\"notices\":[\"Site Analytics is active. Preview B.\",\"Site Toolkit is active. Preview B.\",\"\",\"\",\"\"],\"active\":[{\"file\":\"pr-1-7c9872dfc5ef3efce2bf7fb0d099d5e3d03cd864-site-analytics/site-analytics.php\",\"text\":\"Select Site Analytics (V3 Example Monorepo)\\n\\t\\nSite Analytics (V3 Example Monorepo)\\nDeactivate\\n\\t\\n\\nAnalytics half of the v3 monorepo example. Activated together with Site Toolkit.\\n\\nVersion 0.1.0\\n\\t\"},{\"file\":\"pr-1-7c9872dfc5ef3efce2bf7fb0d099d5e3d03cd864-site-toolkit/site-toolkit.php\",\"text\":\"Select Site Toolkit (V3 Example Monorepo)\\n\\t\\nSite Toolkit (V3 Example Monorepo)\\nDeactivate\\n\\t\\n\\nToolkit half of the v3 monorepo example. Activated together with Site Analytics.\\n\\nVersion 0.1.0\\n\\t\"}]}]\n```"
+      }
+    ]
+  },
+  "selective": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n[{\"title\":\"Plugins ‹ My WordPress Website — WordPress\",\"notices\":[\"Alpha is active. Preview B.\",\"\",\"\"],\"active\":[{\"file\":\"pr-1-5660d58e6f90182e0fc438e0a89e3e6c1041ea49-alpha/alpha.php\",\"text\":\"Select Alpha (V3 Example Selective)\\n\\t\\nAlpha (V3 Example Selective)\\nDeactivate\\n\\t\\n\\nAlpha plugin in the v3 selective-monorepo example.\\n\\nVersion 0.1.0\\n\\t\"}]}]\n```"
+      }
+    ]
+  },
+  "simple": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n[{\"title\":\"Plugins ‹ My WordPress Website — WordPress\",\"notices\":[\"V3 Example (Simple) active. Preview B. Built at: Mon Sep 14 11:34:29 UTC 2026\",\"\",\"\"],\"active\":[{\"file\":\"pr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin/my-plugin.php\",\"text\":\"Select V3 Example (Simple)\\n\\t\\nV3 Example (Simple)\\nDeactivate\\n\\t\\n\\nSmallest possible plugin demonstrating the v3 reusable\\n\\nVersion 0.1.0\\n\\t\"}]}]\n```"
+      }
+    ]
+  }
+}

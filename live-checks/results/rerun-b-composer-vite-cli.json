@@ -1,0 +1,28 @@
+{
+  "case": "composer-vite",
+  "pr": "https://github.com/adamziel/preview-check-composer-vite/pull/1",
+  "sha": "66141781db80de106e5cc9b063b517f94e79e48c",
+  "state": {
+    "active": [
+      "playground-demo-plugin/playground-demo-plugin.php"
+    ],
+    "plugins": {
+      "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+      "hello.php": "Hello Dolly",
+      "playground-demo-plugin/playground-demo-plugin.php": "Playground Demo (Composer + Vite)"
+    },
+    "notices": "Playground Demo is active. Preview B. JS counter: …",
+    "composer": true,
+    "autoload": true,
+    "script": "http://127.0.0.1:59851/wp-content/plugins/playground-demo-plugin/dist/admin.js",
+    "files": {
+      "playground-demo-plugin/playground-demo-plugin.php": {
+        "builtAt": null,
+        "js": "const n=Date.now();function e(){const t=document.getElementById(\"playground-demo-count\");t&&(t.textContent=String(Math.floor((Date.now()-n)/1e3))+\" / Preview B\"),requestAnimationFrame(e)}document.addEventListener(\"DOMContentLoaded\",e);\n"
+      }
+    },
+    "wp": "7.1",
+    "php": "8.3.33"
+  },
+  "status": "pass"
+}

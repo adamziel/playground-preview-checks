@@ -1,0 +1,34 @@
+{
+  "case": "monorepo",
+  "pr": "https://github.com/adamziel/preview-check-monorepo/pull/2",
+  "sha": "809ded7847fb8b4479d50d535a5f84de86fd7487",
+  "state": {
+    "active": [
+      "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics/site-analytics.php",
+      "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit/site-toolkit.php"
+    ],
+    "plugins": {
+      "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+      "hello.php": "Hello Dolly",
+      "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics/site-analytics.php": "Site Analytics (V3 Example Monorepo)",
+      "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit/site-toolkit.php": "Site Toolkit (V3 Example Monorepo)"
+    },
+    "notices": "Site Analytics is active.Site Toolkit is active. Second Preview.",
+    "composer": false,
+    "autoload": false,
+    "script": null,
+    "files": {
+      "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics/site-analytics.php": {
+        "builtAt": null,
+        "js": null
+      },
+      "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit/site-toolkit.php": {
+        "builtAt": null,
+        "js": null
+      }
+    },
+    "wp": "7.1",
+    "php": "8.3.33"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,53 @@
+{
+  "case": "composer-vite",
+  "repo": "adamziel/preview-check-composer-vite",
+  "source": "adamziel/preview-in-playground-button-v3-example-composer-vite",
+  "sourceSha": "4050f4ea095407aedf8d5e93d6cda08398e305a0",
+  "baseSha": "89e0bfd39311655f8ace20bc920a50813b759b67",
+  "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+  "branch": "preview-a",
+  "sha": "658785746a5fa31ba2d7207eeb852db9196a9941",
+  "pr": 1,
+  "url": "https://github.com/adamziel/preview-check-composer-vite/pull/1",
+  "markerFiles": [
+    "src/Notice.php",
+    "src-js/admin.js"
+  ],
+  "runs": [
+    {
+      "id": 34834606546,
+      "name": "PR Preview - Publish",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "89e0bfd39311655f8ace20bc920a50813b759b67",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-composer-vite/actions/runs/34834606546"
+    },
+    {
+      "id": 34834564737,
+      "name": "PR Preview - Build",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "658785746a5fa31ba2d7207eeb852db9196a9941",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-composer-vite/actions/runs/34834564737"
+    }
+  ],
+  "body": "Exercise the copied example with the merged preview workflows. The plugin should display Preview A. Original live examples are unchanged.\n\n<!-- wp-playground-preview:start -->\n<a href=\"https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-composer-vite%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-1-658785746a5fa31ba2d7207eeb852db9196a9941-playground-demo-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D\" target=\"_blank\" rel=\"noopener noreferrer\">\n  <img src=\"https://raw.githubusercontent.com/adamziel/playground-preview/refs/heads/trunk/assets/playground-preview-button.svg\" alt=\"Open WordPress Playground Preview\" width=\"220\" height=\"57\" />\n</a>\n<!-- wp-playground-preview:end -->",
+  "previewUrl": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-composer-vite%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-1-658785746a5fa31ba2d7207eeb852db9196a9941-playground-demo-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+  "blueprint": {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/preview-check-composer-vite/releases/download/ci-artifacts/pr-1-658785746a5fa31ba2d7207eeb852db9196a9941-playground-demo-plugin.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case": "simple",
+  "pr": "https://github.com/adamziel/preview-check-simple/pull/1",
+  "sha": "2ee17b89c43918df436c71e11e7f6b58761a9ed9",
+  "state": {
+    "active": [
+      "pr-1-2ee17b89c43918df436c71e11e7f6b58761a9ed9-my-plugin/my-plugin.php"
+    ],
+    "plugins": {
+      "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+      "hello.php": "Hello Dolly",
+      "pr-1-2ee17b89c43918df436c71e11e7f6b58761a9ed9-my-plugin/my-plugin.php": "V3 Example (Simple)"
+    },
+    "notices": "V3 Example (Simple) active. Preview A. Built at: Mon Sep 14 10:43:14 UTC 2026",
+    "composer": false,
+    "autoload": false,
+    "script": null,
+    "files": {
+      "pr-1-2ee17b89c43918df436c71e11e7f6b58761a9ed9-my-plugin/my-plugin.php": {
+        "builtAt": "Mon Sep 14 10:43:14 UTC 2026",
+        "js": null
+      }
+    },
+    "wp": "7.1",
+    "php": "8.3.33"
+  },
+  "status": "pass"
+}

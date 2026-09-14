@@ -1,0 +1,71 @@
+{
+  "case": "simple",
+  "repo": "adamziel/preview-check-simple",
+  "source": "adamziel/preview-in-playground-button-v3-example-simple",
+  "sourceSha": "ccf7b8ccce93bedec8398fc8d44ddf0fa0a88d25",
+  "baseSha": "5829e81be0cd62fd33e1fd99f5600cb84ec19890",
+  "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+  "branch": "preview-a",
+  "sha": "5d94154830b0a3169255a69158247ceea49edac4",
+  "pr": 1,
+  "url": "https://github.com/adamziel/preview-check-simple/pull/1",
+  "markerFiles": [
+    "my-plugin.php"
+  ],
+  "marker": "Preview B",
+  "label": "rerun-b-simple",
+  "runs": [
+    {
+      "id": 34838883071,
+      "name": "PR Preview - Build",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "5d94154830b0a3169255a69158247ceea49edac4",
+      "run_attempt": 2,
+      "html_url": "https://github.com/adamziel/preview-check-simple/actions/runs/34838883071"
+    },
+    {
+      "id": 34839272329,
+      "name": "PR Preview - Publish",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "5829e81be0cd62fd33e1fd99f5600cb84ec19890",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-simple/actions/runs/34839272329"
+    }
+  ],
+  "body": "Exercise the copied example with the merged preview workflows. The plugin should display Preview A. Original live examples are unchanged.\n\n<!-- wp-playground-preview:start -->\n<a href=\"https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-simple%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D\" target=\"_blank\" rel=\"noopener noreferrer\">\n  <img src=\"https://raw.githubusercontent.com/adamziel/playground-preview/refs/heads/trunk/assets/playground-preview-button.svg\" alt=\"Open WordPress Playground Preview\" width=\"220\" height=\"57\" />\n</a>\n<!-- wp-playground-preview:end -->",
+  "previewUrl": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-simple%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+  "blueprint": {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/preview-check-simple/releases/download/ci-artifacts/pr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      }
+    ]
+  },
+  "commentCount": 0,
+  "releaseAssets": [
+    {
+      "id": 563183237,
+      "name": "pr-1-2ee17b89c43918df436c71e11e7f6b58761a9ed9-my-plugin.zip",
+      "digest": "sha256:2d1ddd0cdd171c9f2f271893dea8389c81f854fb4570cd98e164030b32f584b5",
+      "size": 698,
+      "browser_download_url": "https://github.com/adamziel/preview-check-simple/releases/download/ci-artifacts/pr-1-2ee17b89c43918df436c71e11e7f6b58761a9ed9-my-plugin.zip"
+    },
+    {
+      "id": 563275240,
+      "name": "pr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip",
+      "digest": "sha256:495fa070b715ee8ffd6a20dbe79a6f05359f3aad5259d4b2ca33211304a40e67",
+      "size": 695,
+      "browser_download_url": "https://github.com/adamziel/preview-check-simple/releases/download/ci-artifacts/pr-1-5d94154830b0a3169255a69158247ceea49edac4-my-plugin.zip"
+    }
+  ]
+}

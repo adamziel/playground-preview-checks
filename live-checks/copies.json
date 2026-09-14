@@ -1,0 +1,64 @@
+[
+  {
+    "case": "simple",
+    "repo": "adamziel/preview-check-simple",
+    "source": "adamziel/preview-in-playground-button-v3-example-simple",
+    "sourceSha": "ccf7b8ccce93bedec8398fc8d44ddf0fa0a88d25",
+    "baseSha": "5829e81be0cd62fd33e1fd99f5600cb84ec19890",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "preview-a",
+    "sha": "2ee17b89c43918df436c71e11e7f6b58761a9ed9",
+    "pr": 1,
+    "url": "https://github.com/adamziel/preview-check-simple/pull/1",
+    "markerFiles": [
+      "my-plugin.php"
+    ]
+  },
+  {
+    "case": "monorepo",
+    "repo": "adamziel/preview-check-monorepo",
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo",
+    "sourceSha": "d987ef51e0c51829f57f94bf4faa3029d606864f",
+    "baseSha": "e98346492c8377327282158eddcba907351cc018",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "preview-a",
+    "sha": "7d7ed373e99910716c8a8c1faaa1c57ed2773f9b",
+    "pr": 1,
+    "url": "https://github.com/adamziel/preview-check-monorepo/pull/1",
+    "markerFiles": [
+      "plugins/site-toolkit/site-toolkit.php",
+      "plugins/site-analytics/site-analytics.php"
+    ]
+  },
+  {
+    "case": "selective",
+    "repo": "adamziel/preview-check-selective",
+    "source": "adamziel/preview-in-playground-button-v3-example-monorepo-selective",
+    "sourceSha": "ff5033086a259a8ca9221e3524599b57f162f8fb",
+    "baseSha": "67eaf8921056738448eb585c4cfb1747c84dac52",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "preview-a",
+    "sha": "dbf06b0f8156a45ee7e07983297b985a1a5c48b0",
+    "pr": 1,
+    "url": "https://github.com/adamziel/preview-check-selective/pull/1",
+    "markerFiles": [
+      "plugins/alpha/alpha.php"
+    ]
+  },
+  {
+    "case": "composer-vite",
+    "repo": "adamziel/preview-check-composer-vite",
+    "source": "adamziel/preview-in-playground-button-v3-example-composer-vite",
+    "sourceSha": "4050f4ea095407aedf8d5e93d6cda08398e305a0",
+    "baseSha": "89e0bfd39311655f8ace20bc920a50813b759b67",
+    "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+    "branch": "preview-a",
+    "sha": "658785746a5fa31ba2d7207eeb852db9196a9941",
+    "pr": 1,
+    "url": "https://github.com/adamziel/preview-check-composer-vite/pull/1",
+    "markerFiles": [
+      "src/Notice.php",
+      "src-js/admin.js"
+    ]
+  }
+]

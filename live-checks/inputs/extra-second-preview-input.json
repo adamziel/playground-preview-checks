@@ -1,0 +1,100 @@
+{
+  "case": "monorepo",
+  "repo": "adamziel/preview-check-monorepo",
+  "source": "adamziel/preview-in-playground-button-v3-example-monorepo",
+  "sourceSha": "d987ef51e0c51829f57f94bf4faa3029d606864f",
+  "baseSha": "e98346492c8377327282158eddcba907351cc018",
+  "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+  "branch": "second-preview",
+  "sha": "809ded7847fb8b4479d50d535a5f84de86fd7487",
+  "pr": 2,
+  "url": "https://github.com/adamziel/preview-check-monorepo/pull/2",
+  "markerFiles": [
+    "plugins/site-toolkit/site-toolkit.php",
+    "plugins/site-analytics/site-analytics.php"
+  ],
+  "marker": "Second Preview",
+  "expectedFiles": [
+    "site-toolkit.php",
+    "site-analytics.php"
+  ],
+  "label": "extra-second-preview",
+  "runs": [
+    {
+      "id": 34838402126,
+      "name": "PR Preview - Build",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "809ded7847fb8b4479d50d535a5f84de86fd7487",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-monorepo/actions/runs/34838402126"
+    },
+    {
+      "id": 34838420666,
+      "name": "PR Preview - Publish",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "e98346492c8377327282158eddcba907351cc018",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-monorepo/actions/runs/34838420666"
+    }
+  ],
+  "body": "Check the copied live example without changing its build or publish logic. Original live examples are unchanged.\n\n<!-- wp-playground-preview:start -->\n<a href=\"https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-monorepo%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-monorepo%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D\" target=\"_blank\" rel=\"noopener noreferrer\">\n  <img src=\"https://raw.githubusercontent.com/adamziel/playground-preview/refs/heads/trunk/assets/playground-preview-button.svg\" alt=\"Open WordPress Playground Preview\" width=\"220\" height=\"57\" />\n</a>\n<!-- wp-playground-preview:end -->",
+  "previewUrl": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-monorepo%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-monorepo%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+  "blueprint": {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      },
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      }
+    ]
+  },
+  "commentCount": 0,
+  "releaseAssets": [
+    {
+      "id": 563183463,
+      "name": "pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-analytics.zip",
+      "digest": "sha256:009c58170286375f2279be8b9945aba1eb57392bbff8b9311bb176ca266d16d1",
+      "size": 428,
+      "browser_download_url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-analytics.zip"
+    },
+    {
+      "id": 563183487,
+      "name": "pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-toolkit.zip",
+      "digest": "sha256:2f4f3998a4f975c4d6a26a76654c824caf7949f0310f8dabe5cbae02fcdd09ab",
+      "size": 423,
+      "browser_download_url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-1-7d7ed373e99910716c8a8c1faaa1c57ed2773f9b-site-toolkit.zip"
+    },
+    {
+      "id": 563256833,
+      "name": "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics.zip",
+      "digest": "sha256:9d916ab73aaecde0ceb0609b10d3e43b612f4e30300e78873880a17ecd89d840",
+      "size": 421,
+      "browser_download_url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-analytics.zip"
+    },
+    {
+      "id": 563256949,
+      "name": "pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit.zip",
+      "digest": "sha256:12c6d04533d0a56967adedc64b5117ced703e36c5a7221b186c907efa7f65024",
+      "size": 427,
+      "browser_download_url": "https://github.com/adamziel/preview-check-monorepo/releases/download/ci-artifacts/pr-2-809ded7847fb8b4479d50d535a5f84de86fd7487-site-toolkit.zip"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-14",
+  "phase": "initial",
+  "browser": "Codex in-app browser",
+  "method": "Navigate each generated button URL to /wp-admin/plugins.php and read the rendered accessibility tree",
+  "simple": {"status":"pass","activeCount":1,"deactivateLabel":"Deactivate V3 Example (Simple)","notice":"active. Preview A. Built at: Mon Sep 14 10:43:14 UTC 2026"},
+  "monorepo": {"status":"pass","activeCount":2,"activeNames":["Site Analytics (V3 Example Monorepo)","Site Toolkit (V3 Example Monorepo)"],"notices":["Site Analytics is active. Preview A.","Site Toolkit is active. Preview A."]},
+  "selective": {"status":"pass","activeCount":1,"activeNames":["Alpha (V3 Example Selective)"],"notice":"Alpha is active. Preview A."},
+  "composer-vite": {"status":"pass","activeCount":1,"activeNames":["Playground Demo (Composer + Vite)"],"notice":"Playground Demo is active. Preview A. JS counter:","counterSamples":["17 / Preview A","141 / Preview A"]}
+}

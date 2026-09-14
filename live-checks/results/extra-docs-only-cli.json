@@ -1,0 +1,34 @@
+{
+  "case": "selective",
+  "pr": "https://github.com/adamziel/preview-check-selective/pull/4",
+  "sha": "70603efc9647fee4bb5a174ee7a96ddfd899da4d",
+  "state": {
+    "active": [
+      "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-alpha/alpha.php",
+      "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-beta/beta.php"
+    ],
+    "plugins": {
+      "akismet/akismet.php": "Akismet Anti-spam: Spam Protection",
+      "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-alpha/alpha.php": "Alpha (V3 Example Selective)",
+      "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-beta/beta.php": "Beta (V3 Example Selective)",
+      "hello.php": "Hello Dolly"
+    },
+    "notices": "Alpha is active.Beta is active.",
+    "composer": false,
+    "autoload": false,
+    "script": null,
+    "files": {
+      "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-alpha/alpha.php": {
+        "builtAt": null,
+        "js": null
+      },
+      "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-beta/beta.php": {
+        "builtAt": null,
+        "js": null
+      }
+    },
+    "wp": "7.1",
+    "php": "8.3.33"
+  },
+  "status": "pass"
+}

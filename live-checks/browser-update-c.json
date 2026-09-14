@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Script ran on page and returned:\n```json\n[{\"title\":\"Plugins ‹ My WordPress Website — WordPress\",\"notices\":[\"Site Analytics is active. Preview C.\",\"Site Toolkit is active. Preview C.\",\"\",\"\",\"\"],\"active\":[{\"file\":\"pr-1-bdb3c164bd3c996428923286fcdb35434cee3a7a-site-analytics/site-analytics.php\",\"text\":\"Select Site Analytics (V3 Example Monorepo)\\n\\t\\nSite Analytics (V3 Example Monorepo)\\nDeactivate\\n\\t\\n\\nAnalytics half of the v3 monorepo example. Activated together with Site Toolkit.\\n\\nVersion 0.1.0\\n\\t\"},{\"file\":\"pr-1-bdb3c164bd3c996428923286fcdb35434cee3a7a-site-toolkit/site-toolkit.php\",\"text\":\"Select Site Toolkit (V3 Example Monorepo)\\n\\t\\nSite Toolkit (V3 Example Monorepo)\\nDeactivate\\n\\t\\n\\nToolkit half of the v3 monorepo example. Activated together with Site Analytics.\\n\\nVersion 0.1.0\\n\\t\"}]}]\n```"
+    }
+  ]
+}

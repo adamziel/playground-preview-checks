@@ -1,0 +1,127 @@
+{
+  "case": "selective",
+  "repo": "adamziel/preview-check-selective",
+  "source": "adamziel/preview-in-playground-button-v3-example-monorepo-selective",
+  "sourceSha": "ff5033086a259a8ca9221e3524599b57f162f8fb",
+  "baseSha": "67eaf8921056738448eb585c4cfb1747c84dac52",
+  "actionSha": "464a136c9f979c084d7b4e1be3aa6b2b34929403",
+  "branch": "both-plugins",
+  "sha": "963dbe4cafd555229b2b7374b8e1891c63e96cf8",
+  "pr": 3,
+  "url": "https://github.com/adamziel/preview-check-selective/pull/3",
+  "markerFiles": [
+    "plugins/alpha/alpha.php"
+  ],
+  "marker": "Preview Both",
+  "expectedFiles": [
+    "alpha.php",
+    "beta.php"
+  ],
+  "label": "extra-both-plugins",
+  "runs": [
+    {
+      "id": 34838392393,
+      "name": "PR Preview - Build",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "963dbe4cafd555229b2b7374b8e1891c63e96cf8",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-selective/actions/runs/34838392393"
+    },
+    {
+      "id": 34838412395,
+      "name": "PR Preview - Publish",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "67eaf8921056738448eb585c4cfb1747c84dac52",
+      "run_attempt": 1,
+      "html_url": "https://github.com/adamziel/preview-check-selective/actions/runs/34838412395"
+    }
+  ],
+  "body": "Check the copied live example without changing its build or publish logic. Original live examples are unchanged.\n\n<!-- wp-playground-preview:start -->\n<a href=\"https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-selective%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-selective%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D\" target=\"_blank\" rel=\"noopener noreferrer\">\n  <img src=\"https://raw.githubusercontent.com/adamziel/playground-preview/refs/heads/trunk/assets/playground-preview-button.svg\" alt=\"Open WordPress Playground Preview\" width=\"220\" height=\"57\" />\n</a>\n<!-- wp-playground-preview:end -->",
+  "previewUrl": "https://playground.wordpress.net?blueprint-url=data:application/json,%7B%22%24schema%22%3A%22https%3A%2F%2Fplayground.wordpress.net%2Fblueprint-schema.json%22%2C%22steps%22%3A%5B%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-selective%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%2C%7B%22step%22%3A%22installPlugin%22%2C%22pluginZipFile%22%3A%7B%22resource%22%3A%22url%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fadamziel%2Fpreview-check-selective%2Freleases%2Fdownload%2Fci-artifacts%2Fpr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip%22%7D%2C%22options%22%3A%7B%22activate%22%3Atrue%7D%7D%5D%7D",
+  "blueprint": {
+    "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "steps": [
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      },
+      {
+        "step": "installPlugin",
+        "pluginZipFile": {
+          "resource": "url",
+          "url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip"
+        },
+        "options": {
+          "activate": true
+        }
+      }
+    ]
+  },
+  "commentCount": 0,
+  "releaseAssets": [
+    {
+      "id": 563183425,
+      "name": "pr-1-dbf06b0f8156a45ee7e07983297b985a1a5c48b0-alpha.zip",
+      "digest": "sha256:97430807c2b24e65e4a608a10bed4500b692e3c48805ec67b7f174039a7fce99",
+      "size": 382,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-1-dbf06b0f8156a45ee7e07983297b985a1a5c48b0-alpha.zip"
+    },
+    {
+      "id": 563183475,
+      "name": "pr-1-dbf06b0f8156a45ee7e07983297b985a1a5c48b0-beta.zip",
+      "digest": "sha256:df0d803caa58a3ecf36e9d60da06c56a78517d9a7bd938267844cfc3a47e794c",
+      "size": 372,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-1-dbf06b0f8156a45ee7e07983297b985a1a5c48b0-beta.zip"
+    },
+    {
+      "id": 563256639,
+      "name": "pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-alpha.zip",
+      "digest": "sha256:dd06ca3175d0dd3bf8eb1d8fe1a70997fb078acb9d758829237e365dff3fc2aa",
+      "size": 375,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-alpha.zip"
+    },
+    {
+      "id": 563256671,
+      "name": "pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-beta.zip",
+      "digest": "sha256:70798bd8475b997937e30c1252a1ae9c7a8057f024dbfae2869d83d13a496538",
+      "size": 381,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-2-50b33c43fda17ad6f3adf48b6e51a9f931478719-beta.zip"
+    },
+    {
+      "id": 563256626,
+      "name": "pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip",
+      "digest": "sha256:3e8a12b9ee1cb5dd8ff9d66e00dc7f1f1c23dcde686b1f5f280a9a9d5244187b",
+      "size": 385,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip"
+    },
+    {
+      "id": 563256646,
+      "name": "pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip",
+      "digest": "sha256:8ebb8b8665bf056544f36098aa9be472bfc0f98ad8deba746e6953297875b60f",
+      "size": 381,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip"
+    },
+    {
+      "id": 563256688,
+      "name": "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-alpha.zip",
+      "digest": "sha256:5a3a70208f2ea827b2bd35953175485ff25c21784aefba0496694efe7c77b8da",
+      "size": 375,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-alpha.zip"
+    },
+    {
+      "id": 563256721,
+      "name": "pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-beta.zip",
+      "digest": "sha256:02b9facaca7262a8aee19474e9847efe558530cc2d1f9586128773347d86f0ef",
+      "size": 372,
+      "browser_download_url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-4-70603efc9647fee4bb5a174ee7a96ddfd899da4d-beta.zip"
+    }
+  ]
+}

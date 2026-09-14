@@ -1,0 +1,24 @@
+[
+  {
+    "asset": "pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip",
+    "id": 563256626,
+    "url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-alpha.zip",
+    "sha256": "3e8a12b9ee1cb5dd8ff9d66e00dc7f1f1c23dcde686b1f5f280a9a9d5244187b",
+    "sourceRun": "https://github.com/adamziel/preview-check-selective/actions/runs/34838392393",
+    "bytes": 385,
+    "entries": [
+      "alpha.php"
+    ]
+  },
+  {
+    "asset": "pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip",
+    "id": 563256646,
+    "url": "https://github.com/adamziel/preview-check-selective/releases/download/ci-artifacts/pr-3-963dbe4cafd555229b2b7374b8e1891c63e96cf8-beta.zip",
+    "sha256": "8ebb8b8665bf056544f36098aa9be472bfc0f98ad8deba746e6953297875b60f",
+    "sourceRun": "https://github.com/adamziel/preview-check-selective/actions/runs/34838392393",
+    "bytes": 381,
+    "entries": [
+      "beta.php"
+    ]
+  }
+]
