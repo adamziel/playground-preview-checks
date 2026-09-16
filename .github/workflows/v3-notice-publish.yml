@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@0f08a38153737a29cf76258510ebf82978c7a8c8
+    uses: WordPress/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@v3
     with:
       kind: plugin
       release-tag: v3-notice-built
