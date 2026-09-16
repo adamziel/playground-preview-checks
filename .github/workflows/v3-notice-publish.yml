@@ -1,0 +1,17 @@
+name: V3 upgrade notice - Publish
+
+on:
+  workflow_run:
+    workflows: ["V3 upgrade notice - Build"]
+    types: [completed]
+
+jobs:
+  publish:
+    if: github.event.workflow_run.head_branch == 'codex/v3-notice-fixture'
+    permissions:
+      contents: write
+      pull-requests: write
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-publish.yml@0f08a38153737a29cf76258510ebf82978c7a8c8
+    with:
+      kind: plugin
+      release-tag: v3-notice-built
