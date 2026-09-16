@@ -10,7 +10,7 @@ permissions:
 jobs:
   build:
     if: github.head_ref == 'codex/v3-notice-fixture'
-    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@0f08a38153737a29cf76258510ebf82978c7a8c8
+    uses: WordPress/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@v3
     with:
       artifacts: my-plugin=build/my-plugin.zip
       build-command: bash scripts/package-plugin.sh
@@ -27,7 +27,7 @@ jobs:
           persist-credentials: false
       - name: Direct preview
         id: direct
-        uses: adamziel/action-wp-playground-pr-preview@0f08a38153737a29cf76258510ebf82978c7a8c8
+        uses: WordPress/action-wp-playground-pr-preview@v3
         with:
           plugin-path: .
           mode: comment
@@ -43,7 +43,7 @@ jobs:
           if-no-files-found: error
       - name: Legacy artifact URL
         id: legacy
-        uses: adamziel/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@0f08a38153737a29cf76258510ebf82978c7a8c8
+        uses: WordPress/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@v3
         with:
           artifact-name: v3-notice-legacy
           artifact-filename: plugin.zip
