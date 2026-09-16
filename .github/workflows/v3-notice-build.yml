@@ -1,0 +1,60 @@
+name: V3 upgrade notice - Build
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: github.head_ref == 'codex/v3-notice-fixture'
+    uses: adamziel/action-wp-playground-pr-preview/.github/workflows/preview-build.yml@0f08a38153737a29cf76258510ebf82978c7a8c8
+    with:
+      artifacts: my-plugin=build/my-plugin.zip
+      build-command: bash scripts/package-plugin.sh
+
+  direct-and-legacy:
+    if: github.head_ref == 'codex/v3-notice-fixture'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          persist-credentials: false
+      - name: Direct preview
+        id: direct
+        uses: adamziel/action-wp-playground-pr-preview@0f08a38153737a29cf76258510ebf82978c7a8c8
+        with:
+          plugin-path: .
+          mode: comment
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Package the legacy fixture
+        run: |
+          bash scripts/package-plugin.sh
+          cp build/my-plugin.zip plugin.zip
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: v3-notice-legacy
+          path: plugin.zip
+          if-no-files-found: error
+      - name: Legacy artifact URL
+        id: legacy
+        uses: adamziel/action-wp-playground-pr-preview/.github/actions/expose-artifact-on-public-url@0f08a38153737a29cf76258510ebf82978c7a8c8
+        with:
+          artifact-name: v3-notice-legacy
+          artifact-filename: plugin.zip
+          release-tag: v3-notice-legacy
+          pr-number: ${{ github.event.pull_request.number }}
+          commit-sha: ${{ github.event.pull_request.head.sha }}
+      - name: Check preview outputs
+        env:
+          PREVIEW_URL: ${{ steps.direct.outputs.preview-url }}
+          ARTIFACT_URL: ${{ steps.legacy.outputs.artifact-url }}
+        run: |
+          [[ "$PREVIEW_URL" == https://playground.wordpress.net* ]]
+          curl --fail --silent --show-error --location --retry 2 "$ARTIFACT_URL" -o downloaded-plugin.zip
+          cmp plugin.zip downloaded-plugin.zip
