@@ -57,4 +57,4 @@ jobs:
         run: |
           [[ "$PREVIEW_URL" == https://playground.wordpress.net* ]]
           curl --fail --silent --show-error --location --retry 2 "$ARTIFACT_URL" -o downloaded-plugin.zip
-          cmp plugin.zip downloaded-plugin.zip
+          cmp build/my-plugin.zip downloaded-plugin.zip
